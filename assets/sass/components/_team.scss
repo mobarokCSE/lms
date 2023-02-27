@@ -1,0 +1,63 @@
+.team {
+    @extend %of-hidden;
+    &__item {
+        &-inner {
+            @extend %p-rel;
+        }
+
+        &-thumb {
+            @extend %of-hidden;
+            border-radius: 20px;
+
+            img {
+                @extend %w-100;
+                @include add-prefix(transition, $transition);
+                object-fit: cover;
+            }
+        }
+
+        &-content {
+            &--style1 {
+                @extend %p-abs;
+                color: $white-color;
+                transform: translate(-50%, -50%);
+                position: absolute;
+                content: "";
+                left: 50%;
+                bottom: -10%;
+
+            }
+        }
+
+        &-author {
+            @extend %text-center;
+
+            h6 {
+                color: $white-color;
+                @include add-prefix(transition, $transition);
+            }
+        }
+
+        &:hover {
+
+            .team__item {
+                &-thumb {
+                    img {
+                        @include add-prefix(transform, scale(1.05));
+                    }
+                }
+                &-author{
+                    h6{
+                        a{
+                            color: $white-color;
+                        }
+                        
+                    
+                    }
+                }
+            }
+
+        }
+
+    }
+}

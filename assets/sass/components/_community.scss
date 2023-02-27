@@ -1,0 +1,12 @@
+.community {
+    @extend %of-hidden;
+    @extend %text-center;
+
+    &__reviews {
+        @extend %text-center, %p-rel;
+        background-color: $white-color;
+        margin-inline: auto;
+        margin-block-end: -74px;
+        z-index: 1;
+    }
+}

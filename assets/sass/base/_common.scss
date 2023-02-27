@@ -1,0 +1,159 @@
+// background image use 
+.bg-image {
+    background-repeat: no-repeat;
+}
+
+// community review
+.community__reviews {
+    @extend %p-20;
+    max-width: 383px;
+    border-radius: 25px;
+    box-shadow: 16px 15px 35px 0px #5696C81A;
+
+    p {
+        @extend %mb-10;
+        @include font-size(20px);
+        font-weight: 600;
+        font-family: $title-font;
+
+        svg {
+            color: red;
+        }
+    }
+
+    &-content {
+        @extend %d-flex;
+        gap: 30px;
+
+        ul {
+            @extend %d-flex,
+            %align-i-center;
+
+            li {
+                &:not(:nth-child(0)) {
+                    margin-right: -15px;
+                }
+            }
+        }
+
+        span {
+            @include font-size(36px);
+            font-weight: 700;
+            color: $title-color;
+        }
+    }
+}
+
+
+
+// slider pagination
+
+.slider__pagination-1 {
+    @extend %text-center,
+    %mt-65;
+
+    .swiper-pagination-bullet {
+        background-color: $white-color;
+        width: 15px;
+        border: none;
+        height: 6px;
+        border-radius: 10px;
+        transition: .3s linear;
+
+        &-active {
+            width: 30px
+        }
+
+    }
+}
+
+
+.slider__pagination-2 {
+    @extend %text-center,
+    %mt-65;
+
+    .swiper-pagination-bullet {
+        background-color: $secondary-color-4;
+        width: 13px;
+        height: 13px;
+        border: none;
+        border-radius: 50px;
+
+        &-active {
+            width: 16px;
+            height: 16px;
+            outline-style: dotted;
+            outline-color: $secondary-color-4;
+
+        }
+
+    }
+}
+
+
+// ***************
+// tesimonial pagination
+
+
+// scrollTop
+.scrollToTop {
+    @include add-prefix(transition, $transition);
+    position: fixed;
+    // bottom: -20%;
+    bottom: 5%;
+    right: 5%;
+    z-index: 9;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: $secondary-color-1;
+    text-align: center;
+    border-radius: 5px;
+    color: $body-color;
+
+    &:hover {
+        @include add-prefix (transform, translateY(-5px));
+        color: $body-color;
+    }
+
+
+}
+
+
+// form
+    .form {
+        @extend %p-rel;
+        z-index: 1;
+
+        input,
+        textarea {
+            @extend %w-100;
+            // @include add-prefix(border, 1px solid rgba($theme-color, $alpha:.1));
+            @include add-prefix(border-radius, .5rem);
+            @include add-prefix(transition, $transition);
+            // background-color: $body-color;
+            color: $text-color;
+            padding: 15px 30px;
+
+            &::placeholder {
+                color: $text-color;
+            }
+
+            &:focus-within {
+                outline: none;
+                // border-color: rgba($theme-color, $alpha: .80);
+                border-color: none;
+                box-shadow: none;
+            }
+        }
+
+        input {
+            @extend %mb-20;
+        }
+
+        textarea {
+            @extend %mb-40;
+            min-height: 250px;
+        }
+    }
+

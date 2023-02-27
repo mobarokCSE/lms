@@ -1,0 +1,55 @@
+
+.social {
+    @extend %flex;
+    @extend %align-i-center;
+    @extend %list-none;
+    @extend %ps-0;
+    @extend %mb-0;
+    gap: 15px;
+
+    &__link {
+        @extend %d-inline-block;
+        @extend %text-center;
+        @include add-prefix(transition, background-color .2s linear);
+        background-color: transparent;
+        // border: 2px solid rgba($white-color, $alpha: .70);
+        @include font-size(18px);
+
+        &--rounded1 {
+            background-color: $white-color;
+            @include box(35px);
+            line-height: 35px;
+            border-radius: 50px;
+        }
+        &--rounded4 {
+            background-color: $secondary-color-4;
+            @include box(35px);
+            line-height: 35px;
+            border-radius: 50px;
+        }
+
+        svg,
+        i {
+            color: $black-color;
+            font-size: inherit;
+
+        }
+
+        &:hover {
+            &.social__link--rounded1{
+                background-color: $secondary-color-1;
+                svg,i{
+                    color: $black-color;
+                }
+                
+            }
+            &.social__link--rounded4{
+                background-color: $title-color;
+                svg,i{
+                    color: $white-color;
+                }
+            }
+            
+        }
+    }
+}

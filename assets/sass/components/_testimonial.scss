@@ -1,0 +1,85 @@
+.testimonial {
+  &__item {
+    @extend %text-center;
+    color: $white-color;
+
+    &-content {
+      span {
+        svg {
+          @include font-size(70px);
+          @extend %mb-40;
+          color: $secondary-color-1;
+        }
+      }
+
+      h3 {
+        @extend %text-center;
+        font-weight: 400;
+        color: $white-color;
+        max-inline-size: 53ch;
+        margin: 0 auto;
+      }
+
+    }
+
+    &-author {
+      @extend %mt-40;
+
+      >p {
+        @extend %mb-10;
+        @include font-size(20px);
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__author {
+    max-width: 90%;
+
+    @include breakpoint(sm){
+      max-width: 70%;
+    }
+    @include breakpoint(md){
+      max-width: 65%;
+    }
+    @include breakpoint(lg){
+      max-width: 55%;
+    }
+    @include breakpoint(xl){
+      max-width: 45%;
+    }
+
+    &-thumb {
+      img {
+        border: 1px solid transparent;
+        border-radius: 65px;
+        padding: 5px;
+        max-width: 60px;
+        cursor: pointer;
+
+        @include breakpoint(sm){
+          max-width: 70px;
+        }
+        @include breakpoint(md){
+          max-width: 80px;
+        }
+        @include breakpoint(lg){
+          max-width: 90px;
+        }
+        @include breakpoint(xl){
+          max-width: 100px;
+        }
+      }
+    }
+
+    .swiper-slide {
+      &-thumb-active {
+        img {
+          border: 1px solid $secondary-color-1;
+          border-radius: 65px;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}
