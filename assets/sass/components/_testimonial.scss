@@ -1,85 +1,220 @@
 .testimonial {
-  &__item {
-    @extend %text-center;
-    color: $white-color;
 
-    &-content {
-      span {
-        svg {
-          @include font-size(70px);
-          @extend %mb-40;
-          color: $secondary-color-1;
-        }
-      }
-
-      h3 {
+  &--style1 {
+    .testimonial {
+      &__item {
         @extend %text-center;
-        font-weight: 400;
         color: $white-color;
-        max-inline-size: 53ch;
-        margin: 0 auto;
+
+        &-content {
+          span {
+            svg {
+              @include font-size(70px);
+              @extend %mb-40;
+              color: $secondary-color-1;
+            }
+          }
+
+          h3 {
+            @extend %text-center;
+            font-weight: 400;
+            color: $white-color;
+            max-inline-size: 53ch;
+            margin: 0 auto;
+          }
+
+        }
+
+        &-author {
+          @extend %mt-40;
+
+          >p {
+            @extend %mb-10;
+            @include font-size(20px);
+            font-weight: 600;
+          }
+        }
       }
 
-    }
+      &__author {
+        max-width: 90%;
 
-    &-author {
-      @extend %mt-40;
+        @include breakpoint(sm) {
+          max-width: 70%;
+        }
 
-      >p {
-        @extend %mb-10;
-        @include font-size(20px);
-        font-weight: 600;
+        @include breakpoint(md) {
+          max-width: 65%;
+        }
+
+        @include breakpoint(lg) {
+          max-width: 55%;
+        }
+
+        @include breakpoint(xl) {
+          max-width: 45%;
+        }
+
+        &-thumb {
+          img {
+            border: 1px solid transparent;
+            border-radius: 65px;
+            padding: 5px;
+            max-width: 60px;
+            cursor: pointer;
+
+            @include breakpoint(sm) {
+              max-width: 70px;
+            }
+
+            @include breakpoint(md) {
+              max-width: 80px;
+            }
+
+            @include breakpoint(lg) {
+              max-width: 90px;
+            }
+
+            @include breakpoint(xl) {
+              max-width: 100px;
+            }
+          }
+        }
+
+        .swiper-slide {
+          &-thumb-active {
+            img {
+              border: 1px solid $secondary-color-1;
+              border-radius: 65px;
+              padding: 5px;
+            }
+          }
+        }
       }
     }
   }
 
-  &__author {
-    max-width: 90%;
+  &--style2 {
+    .testimonial {
+      &__wrapper{
+              @extend %p-rel;
+      }
 
-    @include breakpoint(sm){
-      max-width: 70%;
-    }
-    @include breakpoint(md){
-      max-width: 65%;
-    }
-    @include breakpoint(lg){
-      max-width: 55%;
-    }
-    @include breakpoint(xl){
-      max-width: 45%;
-    }
+      &__item {
+        &-inner {
+          @extend %py-40,
+          %px-25;
+          background-color: $white-color;
+          border-radius: 16px;
+        }
 
-    &-thumb {
-      img {
-        border: 1px solid transparent;
-        border-radius: 65px;
-        padding: 5px;
-        max-width: 60px;
-        cursor: pointer;
+        &-content {
+          span {
+            @extend %mb-20;
 
-        @include breakpoint(sm){
-          max-width: 70px;
-        }
-        @include breakpoint(md){
-          max-width: 80px;
-        }
-        @include breakpoint(lg){
-          max-width: 90px;
-        }
-        @include breakpoint(xl){
-          max-width: 100px;
+            svg {
+              @include font-size(70px);
+              color: $brand-color-2;
+            }
+          }
+
         }
       }
-    }
 
-    .swiper-slide {
-      &-thumb-active {
-        img {
-          border: 1px solid $secondary-color-1;
-          border-radius: 65px;
-          padding: 5px;
+      &__footer {
+        @extend %d-flex,
+        %align-i-center,
+        %justify-between,
+        %mt-40;
+      }
+
+      &__author {
+        @extend %d-flex,
+        %align-i-center;
+        gap: 20px;
+
+        &-thumb {
+          img {
+            max-width: 60px;
+          }
+
+        }
+
+        &-designation {
+          h6 {
+            @extend %mb-5;
+            font-weight: 600;
+
+          }
+
+          span {
+            @include font-size(14px);
+            color: $text-color-light;
+          }
         }
       }
+
+      &__rating {
+        span {
+          svg {
+            font-size: 18px;
+            color: $tertiary-color-2;
+          }
+        }
+      }
+
+      &__shape {
+        &-item {
+          @extend %p-abs;
+
+          &:nth-child(1) {
+            @extend %d-none;
+            width: 100px;
+            bottom: -5%;
+            left: -5%;
+
+            &.banner__shape-item--animation {
+              @include animation(floating 2s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate);
+            }
+
+            @include breakpoint(md) {
+              display: block;
+            }
+
+            @include breakpoint(lg) {
+              width: 150px;
+            }
+
+            @include breakpoint(xl) {
+              width: auto;
+            }
+          }
+          &:nth-child(2) {
+            @extend %d-none;
+            width: 100px;
+             bottom: -5%;
+            right: -5%;
+
+            &.banner__shape-item--animation {
+              @include animation(floating 2s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate);
+            }
+
+            @include breakpoint(md) {
+              display: block;
+            }
+
+            @include breakpoint(lg) {
+              width: 150px;
+            }
+
+            @include breakpoint(xl) {
+              width: auto;
+            }
+          }
+        }
+      }
+
     }
   }
+
 }

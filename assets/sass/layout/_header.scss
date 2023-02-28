@@ -526,6 +526,10 @@
             font-family: $title-font;
             color: $secondary-color-2;
         }
+
+        &--style2{
+            @extend %justify-center;
+        }
     }
 
     &--dark {

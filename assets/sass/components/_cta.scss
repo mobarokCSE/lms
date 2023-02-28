@@ -1,55 +1,70 @@
 .cta {
-  &__wrapper {
-    padding: 40px;
-    border-radius: 1rem;
-    background-color: $brand-color;
-    background-image: url(../img/cta/bg.png);
-    background-size: cover;
-
-    @include breakpoint(md) {
-      padding: 60px;
-      border-radius: 1.5rem;
-    }
-
-    @include breakpoint(xl) {
-      padding: 80px;
-    }
-  }
-
-  .custom-btn {
-    background-color: $white-color;
-    color: $brand-color;
-
-    &:hover {
-      color: $brand-color;
-    }
-  }
-
   &__content {
+    &-inner {
 
-    h2,
-    p {
-      color: $white-color;
-    }
+      .subtitle {
+        @extend %d-flex,
+        %align-i-center,
+        %justify-center;
+        gap: 10px;
 
-    h2 {
-      @extend %mb-15;
-      max-inline-size: 18ch;
+        p {
+          @include font-size(20px);
+          font-weight: 600;
+          font-family: $title-font;
+          color: $white-color;
+        }
+      }
 
-      span {
-        color: $body-bg;
+      h2 {
+        color: $white-color;
+        max-inline-size: 18ch;
+        margin: auto;
+      }
+
+      .form {
+        max-width: 500px;
+        margin: 40px auto auto auto;
+
+
+        @include breakpoint(sm) {
+          max-width: 600px;
+        }
+
+        .input-group {
+          @extend %px-20;
+        }
+
+        .form-control {
+          border-top-left-radius: 15px;
+          border-bottom-left-radius: 15px;
+          z-index: 1;
+
+          ::placeholder {
+            color: #98A2B3;
+          }
+        }
+
+        .cta-btn {
+          padding: 16px 30px;
+          border-top-right-radius: 15px;
+          border-bottom-right-radius: 15px;
+          background: $brand-color-4;
+          border-color: $brand-color-4;
+          // margin-left: -25px;
+          @include font-size(16px);
+
+          @include breakpoint(sm) {
+            padding: 16px 30px;
+          }
+        }
       }
     }
-
-    >p {
-      @extend %mb-30;
-    }
-
   }
 
   .form-control {
     max-inline-size: 300px;
-    padding: 1.25rem;
+    padding: 1rem;
     border-radius: 99px;
 
     &:focus {

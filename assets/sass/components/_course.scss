@@ -273,8 +273,8 @@
                     color: $white-color;
                     transition: $transition;
                     display: grid;
-                    left: 48%;
-                    bottom: 2%;
+                    left: 46%;
+                    bottom: -5%;
                     place-items: center;
                     z-index: 1;
 
@@ -282,7 +282,7 @@
                         left: auto;
                         bottom: 2%;
                         transform: rotate(0deg);
-                        right: 48%;
+                        right: 46%;
                     }
                 }
 

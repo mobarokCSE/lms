@@ -326,23 +326,26 @@ const Swiper4 = new Swiper('.course__slider--style4', {
 });
 
 // home 1 testimonial  slider here
-var swiperAuthor = new Swiper(".testimonial__author", {
-    spaceBetween: 1,
-    slidesPerView: 5,
-    freeMode: true,
-    watchSlidesProgress: true,
-    // clickable: true,
-});
 
-const Swiper2 = new Swiper('.testimonial__slider', {
-    grabCursor: true,
-    loop: true,
-    slidesPerView: 1,
-    speed: 3000,
-    thumbs: {
-        swiper: swiperAuthor,
-    },
-});
+// var swiperAuthor = new Swiper(".testimonial__author", {
+//     spaceBetween: 1,
+//     slidesPerView: 5,
+//     freeMode: true,
+//     watchSlidesProgress: true,
+//     // clickable: true,
+// });
+
+
+// const Swiper2 = new Swiper('.testimonial__slider', {
+//     grabCursor: true,
+//     loop: true,
+//     slidesPerView: 1,
+//     speed: 3000,
+//     thumbs: {
+//         swiper: swiperAuthor,
+//     },
+// });
+
 
 
 // home 1 partner  slider here
@@ -404,3 +407,54 @@ const Swiper5 = new Swiper('.categories__slider', {
         clickable: true
     },
 });
+
+// testimonial
+const Swiper7 = new Swiper('.testimonial__slider2', {
+    spaceBetween: 24,
+    grabCursor: true,
+    loop: true,
+    slidesPerView: 2,
+    breakpoints: {
+        576: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 1,
+        },
+        992: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
+        1400: {
+            slidesPerView: 2,
+            spaceBetween: 25,
+        }
+    },
+    speed: 3000,
+    pagination: {
+        el: ".slider__pagination-3",
+        clickable: true
+    },
+});
+
+
+
+
+
+// counter
+function counter(id, start, end, duration) {
+    let element = document.getElementById(id);
+    let range = end - start;
+    let current = start;
+    let increment = end > start ? 1 : -1;
+    let stepTime = Math.abs(Math.floor(duration / range));
+    let timer = setInterval(function () {
+        current += increment;
+        element.innerHTML = current;
+        if (current == end) {
+            clearInterval(timer);
+        }
+    }, stepTime);
+}
+
+counter("counter", 0, 63, 2000);
