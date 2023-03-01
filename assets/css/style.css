@@ -18,7 +18,7 @@ Tags: airline , travel company.
   flex-wrap: wrap;
 }
 
-.cta__content-inner .subtitle, .gallery__wrapper a, .section-header .subtitle--style2 {
+.cta__content-inner .subtitle, .gallery__wrapper a, .pageheader__content .breadcrumb, .section-header .subtitle--style2 {
   justify-content: center;
 }
 
@@ -74,7 +74,7 @@ Tags: airline , travel company.
   position: relative;
 }
 
-.counter--style1 .col-md-3:not(:last-child) .counter__item::before, .testimonial--style2 .testimonial__shape-item, .community--style2 .community__thumb-playbtn, .blog--style1 .blog__btn, .team__item-content--style1, .story__thumb-playbtn, .course--style2 .course__thumb-add, .course--style1 .course__btn, .about--style4 .about__shape-item, .about--style1 .about__thumb-plybtn, .about--style1 .about__thumb-video, .footer__linklist-item a::after, .banner__icon-item, .banner__shape-item, .banner__video-inner span, .banner__video, .banner.brand-4::after, .banner.brand-1::after, .menu-item-has-children > a::before, .menu-item-has-children > a::after, .header-bar span {
+.counter--style1 .col-md-3:not(:last-child) .counter__item::before, .testimonial--style2 .testimonial__shape-item, .community--style2 .community__thumb-playbtn, .blog--style1 .blog__btn, .team__item-content--style1, .story__thumb-playbtn, .course--style2 .course__thumb-add, .course--style1 .course__btn, .about--style4 .about__shape-item, .about--style1 .about__thumb-plybtn, .about--style1 .about__thumb-video, .footer__linklist-item a::after, .banner__icon-item, .banner__shape-item, .banner__video-inner span, .banner__video, .banner.brand-4::after, .banner.brand-1::after, .menu-item-has-children > a::before, .menu-item-has-children > a::after, .header-bar span, .header-section--style2 {
   position: absolute;
 }
 
@@ -88,8 +88,12 @@ Tags: airline , travel company.
 
 /*=========<<Position property extends end>>=========*/
 /*=========<<Text property extends start>>=========*/
-.counter--style1 .counter__item-inner, .testimonial--style1 .testimonial__item-content h3, .testimonial--style1 .testimonial__item, .social__link, .community--style1 .community__reviews, .community--style1 .community__wrapper, .team__item-author, .categories--style4 .categories__item-inner img, .categories--style4 .categories__item-inner, .categories--style2 .categories__item-inner, .categories--style1 .categories__item-content a, .categories--style1 .categories__item-inner, .trk-btn, .banner__content--style1, .slider__pagination-3, .slider__pagination-2, .slider__pagination-1 {
+.counter--style1 .counter__item-inner, .testimonial--style1 .testimonial__item-content h3, .testimonial--style1 .testimonial__item, .social__link, .community--style1 .community__reviews, .community--style1 .community__wrapper, .team__item-author, .categories--style4 .categories__item-inner img, .categories--style4 .categories__item-inner, .categories--style2 .categories__item-inner, .categories--style1 .categories__item-content a, .categories--style1 .categories__item-inner, .trk-btn, .banner__content--style1, .pageheader__content, .slider__pagination-3, .slider__pagination-2, .slider__pagination-1 {
   text-align: center;
+}
+
+.pageheader__content .breadcrumb .breadcrumb-item a, .pageheader__content .breadcrumb .breadcrumb-item {
+  font-weight: 500;
 }
 
 /*=========<<Text property extends end>>=========*/
@@ -1679,6 +1683,10 @@ ol {
   max-inline-size: 13ch;
 }
 
+.header-section--style2 {
+  content: "";
+  width: 100%;
+}
 .header-section.header-fixed {
   -webkit-animation: fadeInDown 0.5s;
   -moz-animation: fadeInDown 0.5s;
@@ -1705,12 +1713,12 @@ ol {
 }
 @media (min-width: 768px) {
   .header-wrapper {
-    padding-block: 30px;
+    padding-block: 20px;
   }
 }
 @media (min-width: 1200px) {
   .header-wrapper {
-    padding-block: 45px;
+    padding-block: 25px;
   }
 }
 @media (min-width: 992px) {
@@ -2099,31 +2107,38 @@ ol {
   margin: auto;
 }
 
-.page-header {
-  padding-block: 70px;
+.pageheader {
+  padding-block-start: 250px;
+  padding-block-end: 150px;
   background-size: cover;
   background-position: center;
 }
 @media (min-width: 992px) {
-  .page-header {
-    padding-block: 100px;
+  .pageheader {
+    padding-block-start: 300px;
+    padding-block-end: 200px;
   }
 }
 @media (min-width: 1400px) {
-  .page-header {
-    padding-block: 120px;
+  .pageheader {
+    padding-block-start: 348px;
+    padding-block-end: 244px;
   }
 }
-@media (min-width: 992px) {
-  .page-header .breadcrumb-item {
-    font-size: 1.125rem;
-  }
+.pageheader__content h2 {
+  color: #fff;
 }
-.page-header .breadcrumb-item:before {
-  color: currentColor;
+.pageheader__content .breadcrumb .breadcrumb-item {
+  text-transform: capitalize;
+  font-size: 1.125rem;
+  color: #fff;
 }
-.page-header .breadcrumb-item.active, .page-header .breadcrumb-item:hover {
-  color: #081A28;
+.pageheader__content .breadcrumb .breadcrumb-item a {
+  font-size: 1.125rem;
+  color: #fff;
+}
+.pageheader__content .breadcrumb .breadcrumb-item::before {
+  color: #fff;
 }
 
 .banner.brand-1 {

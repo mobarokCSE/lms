@@ -7,6 +7,12 @@
 .header-section {
     @extend %p-rel;
 
+    &--style2 {
+        @extend %p-abs;
+        content: "";
+        width: 100%;
+    }
+
     &.header-fixed {
         @extend %w-100;
         @include add-prefix(animation, fadeInDown .5s);
@@ -33,11 +39,11 @@
     }
 
     @include breakpoint(md) {
-        padding-block: 30px;
+        padding-block: 20px;
     }
 
     @include breakpoint(xl) {
-        padding-block: 45px;
+        padding-block: 25px;
     }
 
     .header-start {
@@ -59,10 +65,12 @@
         &--style2 {
             @extend %flex,
             %align-i-center;
-            @include breakpoint(lg){
+
+            @include breakpoint(lg) {
                 gap: 10px;
             }
-            @include breakpoint(xl){
+
+            @include breakpoint(xl) {
                 gap: 80px;
             }
         }
@@ -527,7 +535,7 @@
             color: $secondary-color-2;
         }
 
-        &--style2{
+        &--style2 {
             @extend %justify-center;
         }
     }
@@ -552,32 +560,64 @@
 
 
 //  --------------  >>> page header style start here <<< ------------- //
-.page-header {
-    padding-block: 70px;
+.pageheader {
+    padding-block-start: 250px;
+    padding-block-end: 150px;
     background-size: cover;
     background-position: center;
 
     @include breakpoint(lg) {
-        padding-block: 100px;
+        padding-block-start: 300px;
+        padding-block-end: 200px;
     }
 
     @include breakpoint(xxl) {
-        padding-block: 120px;
+        padding-block-start: 348px;
+        padding-block-end: 244px;
     }
 
-    .breadcrumb-item {
-        @include breakpoint(lg) {
-            @include font-size(18px);
+    &__content {
+        @extend %text-center;
+
+        h2 {
+            color: $white-color;
         }
 
-        &:before {
-            color: currentColor;
-        }
+        .breadcrumb {
+            @extend %justify-center;
 
-        &.active,
-        &:hover {
-            color: $brand-color-1;
-        }
+            .breadcrumb-item {
+                text-transform: capitalize;
+                @extend %text-medium;
+                @include font-size(18px);
+                color: $white-color;
 
+                a {
+                    @extend %text-medium;
+                    @include font-size(18px);
+                    color: $white-color;
+                }
+
+                    &::before {
+                        color: $white-color;
+                    }
+            }
+        }
     }
+
+    // .breadcrumb-item {
+    //     @include breakpoint(lg) {
+    //         @include font-size(18px);
+    //     }
+
+    //     &:before {
+    //         color: currentColor;
+    //     }
+
+    //     &.active,
+    //     &:hover {
+    //         color: $brand-color-1;
+    //     }
+
+    // }
 }
