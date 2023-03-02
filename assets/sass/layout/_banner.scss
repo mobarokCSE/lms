@@ -18,7 +18,7 @@
         }
 
         @include breakpoint(lg) {
-            padding-block-start: 50px;
+            padding-block-start: 60px;
             padding-block-end: 90px;
 
             &.brand-4 {
@@ -194,6 +194,44 @@
         }
     }
 
+    &__thumb {
+        &--style2 {
+            .banner__thumb {
+                &-item {
+                    .fist-image {
+
+                        // @extend %mt-65;
+                        @include breakpoint(md) {
+                            margin-top: 65px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &--style3 {
+            .banner__thumb {
+                &-item {
+                    img {
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        max-inline-size: 60%;
+
+                        @include breakpoint(xl) {
+                            position: absolute;
+                            right: 11%;
+                            bottom: 0;
+                            max-inline-size: 45%;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
     &__video {
         @extend %p-abs;
         left: -10px;
@@ -294,6 +332,7 @@
                     bottom: 0%;
                     @include animation(floating 2s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate);
                 }
+
                 @include breakpoint(md) {
                     display: block;
                 }
@@ -367,83 +406,149 @@
         }
     }
 
+
+
+
+
     &__icon {
-        &-item {
-            @extend %p-abs;
+        &--style1 {
+            .banner__icon {
+                &-item {
+                    @extend %p-abs;
 
-            &:nth-child(1) {
-                display: none;
-                width: 100px;
-                top: 28%;
-                left: 44%;
+                    &:nth-child(1) {
+                        display: none;
+                        width: 100px;
+                        top: 28%;
+                        left: 44%;
 
-                &.banner__icon-item--animation {
-                    @include animation(left-right 2s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate);
-                }
+                        &.banner__icon-item--animation {
+                            @include animation(left-right 2s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate);
+                        }
 
-                @include breakpoint(md) {
-                    display: block;
-                }
+                        @include breakpoint(md) {
+                            display: block;
+                        }
 
-                @include breakpoint(lg) {
-                    width: 150px;
-                }
+                        @include breakpoint(lg) {
+                            width: 150px;
+                        }
 
-                @include breakpoint(xl) {
-                    width: auto;
-                }
-            }
+                        @include breakpoint(xl) {
+                            width: auto;
+                        }
+                    }
 
-            &:nth-child(2) {
-                display: none;
-                width: 100px;
-                right: 33%;
-                top: 28%;
+                    &:nth-child(2) {
+                        display: none;
+                        width: 100px;
+                        right: 33%;
+                        top: 28%;
 
-                &.banner__icon-item--animation {
-                    @include animation(floating 2s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate);
-                }
+                        &.banner__icon-item--animation {
+                            @include animation(floating 2s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate);
+                        }
 
-                @include breakpoint(md) {
-                    display: block;
-                }
+                        @include breakpoint(md) {
+                            display: block;
+                        }
 
-                @include breakpoint(lg) {
-                    width: 150px;
-                }
+                        @include breakpoint(lg) {
+                            width: 150px;
+                        }
 
-                @include breakpoint(xl) {
-                    width: auto;
-                }
-            }
+                        @include breakpoint(xl) {
+                            width: auto;
+                        }
+                    }
 
-            &:nth-child(3) {
-                width: 100px;
-                z-index: -1;
-                top: 28%;
-                right: 0%;
+                    &:nth-child(3) {
+                        width: 100px;
+                        z-index: -1;
+                        top: 28%;
+                        right: 0%;
 
-                @include breakpoint(lg) {
-                    width: 150px;
-                }
+                        @include breakpoint(lg) {
+                            width: 150px;
+                        }
 
-                @include breakpoint(xl) {
-                    width: auto;
-                }
-            }
-        }
-    }
-
-    &__thumb {
-        &-item {
-            .fist-image {
-
-                // @extend %mt-65;
-                @include breakpoint(md) {
-                    margin-top: 65px;
+                        @include breakpoint(xl) {
+                            width: auto;
+                        }
+                    }
                 }
             }
         }
+
+        &--style2 {
+            .banner__icon {
+                &-item {
+                    @extend %p-abs;
+
+                    &:nth-child(1) {
+                        display: none;
+                        width: 100px;
+                        top: 27%;
+                        left: 37%;
+
+                        &.banner__icon-item--animation {
+                            @include animation(left-right 2s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate);
+                        }
+
+                        @include breakpoint(md) {
+                            display: block;
+                        }
+
+                        @include breakpoint(lg) {
+                            width: 150px;
+                        }
+
+                        @include breakpoint(xl) {
+                            width: auto;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        display: none;
+                        width: 100px;
+                        right: 41%;
+                        top: 18%;
+
+                        &.banner__icon-item--animation {
+                            @include animation(floating 2s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate);
+                        }
+
+                        @include breakpoint(md) {
+                            display: block;
+                        }
+
+                        @include breakpoint(lg) {
+                            width: 150px;
+                        }
+
+                        @include breakpoint(xl) {
+                            width: auto;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        width: 100px;
+                        z-index: -1;
+                        top: 18%;
+                        right: 10%;
+
+                        @include breakpoint(lg) {
+                            width: 150px;
+                        }
+
+                        @include breakpoint(xl) {
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }
 

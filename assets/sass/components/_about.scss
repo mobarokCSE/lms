@@ -20,7 +20,7 @@
                     bottom: -21%;
                     left: 50%;
 
-                    @include breakpoint(sm) {
+                    @include breakpoint(md) {
                         transform: translate(13%, -13%);
                         position: absolute;
                         content: "";
@@ -28,7 +28,7 @@
                         right: 0%;
                     }
 
-
+ 
                 }
 
                 &-plybtn {
@@ -57,16 +57,18 @@
                 &-inner {
                     @extend %pt-100;
 
-                    @include breakpoint(sm) {
-                        padding-top: 0;
+                    @include breakpoint(md) {
+                        padding-block-start: 20px;
                     }
 
                     @include breakpoint(lg) {
-                        padding-left: 50px;
+                        padding-block-start: auto;
+                        padding-inline-start: 50px;
                     }
 
                     @include breakpoint(xl) {
-                        padding-left: 100px;
+                        padding-block-start: auto;
+                        padding-inline-start: 100px;
                     }
 
                     h3 {

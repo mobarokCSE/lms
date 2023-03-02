@@ -26,27 +26,7 @@
 
 
                     img {
-                        @extend %p-20,
-                        %mb-20;
-                        border-radius: 16px;
                         transition: $transition;
-
-
-                        // @include breakpoint(lg) {
-                        //     padding: 34px;
-                        // }
-
-                        &.categories__item--cat1 {
-                            background-color: $course-color-1;
-                        }
-
-                        &.categories__item--cat2 {
-                            background-color: $course-color-2;
-                        }
-
-                        &.categories__item--cat3 {
-                            background-color: $course-color-3;
-                        }
                     }
 
                     &:hover {
@@ -60,7 +40,7 @@
 
                 &-content {
                     a {
-                        @extend %text-center;
+                        @extend %text-center, %mt-20;
                         color: $title-color;
                         @include font-size(16px);
 
@@ -78,13 +58,24 @@
             }
 
             &__thumb {
-                @extend %p-20,
-                %mb-20;
+                @extend %p-30, %text-center;
                 border-radius: 16px;
                 transition: $transition;
+                max-width: 132px;
+                margin: auto auto 20px auto;
 
-                &--cat1{
+                @include breakpoint (md){
+                    padding: 35px;
+                }
+
+                &--cat1 {
                     background-color: $course-color-1;
+                }
+                &--cat2 {
+                     background-color: $course-color-2;
+                }
+                &--cat3 {
+                     background-color: $course-color-3;
                 }
             }
         }

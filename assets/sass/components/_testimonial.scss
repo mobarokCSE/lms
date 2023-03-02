@@ -15,13 +15,22 @@
             }
           }
 
-          h3 {
-            @extend %text-center;
-            font-weight: 400;
-            color: $white-color;
-            max-inline-size: 53ch;
-            margin: 0 auto;
+          blockquote {
+            p {
+              @extend %text-regular;
+              @include font-size(36px);
+              color: $white-color;
+              max-inline-size: 53ch;
+              margin: 0 auto;
+            }
           }
+
+          // h3 {
+          //   @extend %text-center;
+          //   font-weight: 400;
+          //   color: $white-color;
+
+          // }
 
         }
 
@@ -96,8 +105,8 @@
 
   &--style2 {
     .testimonial {
-      &__wrapper{
-              @extend %p-rel;
+      &__wrapper {
+        @extend %p-rel;
       }
 
       &__item {
@@ -189,10 +198,11 @@
               width: auto;
             }
           }
+
           &:nth-child(2) {
             @extend %d-none;
             width: 100px;
-             bottom: -5%;
+            bottom: -5%;
             right: -5%;
 
             &.banner__shape-item--animation {

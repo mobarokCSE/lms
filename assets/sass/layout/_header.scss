@@ -15,7 +15,7 @@
 
     &.header-fixed {
         @extend %w-100;
-        @include add-prefix(animation, fadeInDown .5s);
+        @include add-prefix(animation, fadeInDown .5s); 
         position: fixed;
         top: 0;
         left: 0;
@@ -26,7 +26,7 @@
         backdrop-filter: blur(20.0px);
         -webkit-backdrop-filter: blur(20.0px);
     }
-}
+} 
 
 .header-wrapper {
     @extend %flex;
@@ -39,11 +39,11 @@
     }
 
     @include breakpoint(md) {
-        padding-block: 20px;
-    }
-
-    @include breakpoint(xl) {
         padding-block: 25px;
+    }
+ 
+    @include breakpoint(xl) {
+        padding-block: 30px;
     }
 
     .header-start {

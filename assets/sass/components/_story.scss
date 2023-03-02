@@ -31,8 +31,12 @@
                 width: 120px;
                 margin: 0 auto;
             }
+            @include breakpoint(xl) {
+                width: 140px;
+                margin: 0 auto;
+            }
 
-            @include breakpoint(lg) {
+            @include breakpoint(xxl) {
                 width: auto;
             }
 

@@ -27,10 +27,13 @@
 
         &-moto {
             max-inline-size: 30ch;
+            margin-block-end: 0;
         }
 
         &-item {
-            @extend %mb-20;
+            &:not(:last-child) {
+                @extend %mb-20; 
+            }
 
             img {
                 @extend %me-10;
@@ -157,13 +160,18 @@
 
         &-links {
             @extend %d-flex,
-            %align-i-center,
+            %align-i-center, 
             %mt-25,
             %mb-30;
-            gap: 5px;
 
-            @include breakpoint(md) {
-                gap: 15px;
+            @include breakpoint (max-sm){
+                justify-content: space-between;
+            }
+            @include breakpoint(sm) {            
+                gap: 10px;
+            }
+            @include breakpoint(md) {            
+                gap: 20px;
             }
 
         }

@@ -1,5 +1,6 @@
 .team {
     @extend %of-hidden;
+
     &__item {
         &-inner {
             @extend %p-rel;
@@ -25,6 +26,7 @@
                 content: "";
                 left: 50%;
                 bottom: -10%;
+                width: 100%;
 
             }
         }
@@ -46,18 +48,37 @@
                         @include add-prefix(transform, scale(1.05));
                     }
                 }
-                &-author{
-                    h6{
-                        a{
+
+                &-author {
+                    h6 {
+                        a {
                             color: $white-color;
                         }
-                        
-                    
+
+
                     }
                 }
             }
 
         }
 
+
+
+    }
+
+    &__wrapper {
+        .section-header {
+            // margin-block-end: 0;
+            p{
+                @include font-size(16px);
+            }
+
+            @include breakpoint(max-md){
+                margin-block-end: 20px;
+            }
+            @include breakpoint(max-xl){ 
+                margin-block-end: 20px;
+            }
+        }
     }
 }
