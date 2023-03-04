@@ -22,15 +22,19 @@ Tags: airline , travel company.
   justify-content: center;
 }
 
-.testimonial--style2 .testimonial__footer, .blog--style2 .blog__header, .blog--style1 .blog__view, .blog--style1 .blog__header, .course--style4 .course__content-top, .course--style2 .course__content, .course--style1 .course__view, .course--style1 .course__content-bottom, .course--style1 .course__content-top, .account__form-passcheck, .header-wrapper .header-start--style1, .header-wrapper {
+.testimonial--style2 .testimonial__footer, .blog--style2 .blog__header, .blog--style1 .blog__view, .blog--style1 .blog__header, .course--style4 .course__content-top, .course--style3 .course__content-bottom, .course--style3 .course__content-top, .course--style2 .course__content, .course--style1 .course__view, .course--style1 .course__content-bottom, .course--style1 .course__content-top, .account__form-passcheck, .header-wrapper .header-start--style1, .header-wrapper {
   justify-content: space-between;
 }
 
-.cta__content-inner .subtitle, .testimonial--style2 .testimonial__author, .testimonial--style2 .testimonial__footer, .social, .blog--style2 .blog__writer, .blog--style2 .blog__author, .blog--style2 .blog__header, .blog--style1 .blog__focus-inner, .blog--style1 .blog__view, .blog--style1 .blog__header, .course--style4 .course__content-footer span, .course--style4 .course__content-footer, .course--style4 .course__author a, .course--style2 .course__focus, .course--style2 .course__content, .course--style1 .course__focus-inner, .course--style1 .course__view, .course--style1 .course__content-bottom .course-price, .course--style1 .course__content-bottom, .btn-group, .text-btn, .footer__end-links, .account__form-passcheck, .banner__content--style2 .banner__content-star, .section-header .subtitle, .header-wrapper .menu-area .header-btn, .header-wrapper .menu-area, .header-wrapper .header-start--style2, .header-wrapper, .community__reviews-content ul {
+.course--style3 .course__wrapper ul {
+  justify-content: space-evenly;
+}
+
+.cta__content-inner .subtitle, .testimonial--style2 .testimonial__author, .testimonial--style2 .testimonial__footer, .social, .blog--style2 .blog__writer, .blog--style2 .blog__author, .blog--style2 .blog__header, .blog--style1 .blog__focus-inner, .blog--style1 .blog__view, .blog--style1 .blog__header, .course--style4 .course__content-footer span, .course--style4 .course__content-footer, .course--style4 .course__author a, .course--style3 .course__mentor, .course--style3 .course__focus, .course--style3 .course__content-bottom, .course--style3 .course__wrapper ul li, .course--style2 .course__focus, .course--style2 .course__content, .course--style1 .course__focus-inner, .course--style1 .course__view, .course--style1 .course__content-bottom .course-price, .course--style1 .course__content-bottom, .btn-group, .text-btn, .footer__end-links, .account__form-passcheck, .banner__content--style2 .banner__content-star, .section-header .subtitle, .header-wrapper .menu-area .header-btn, .header-wrapper .menu-area, .header-wrapper .header-start--style2, .header-wrapper, .community__reviews-content ul {
   align-items: center;
 }
 
-.about--style2 .about__content-item {
+.about--style3 .about__details-item, .about--style2 .about__content-item {
   align-items: flex-start;
 }
 
@@ -52,7 +56,7 @@ Tags: airline , travel company.
   display: block;
 }
 
-.cta__content-inner .subtitle, .testimonial--style2 .testimonial__author, .testimonial--style2 .testimonial__footer, .blog--style2 .blog__writer, .blog--style2 .blog__author, .blog--style2 .blog__header, .blog--style1 .blog__header, .course--style4 .course__content-top, .course--style2 .course__content, .course--style1 .course__content-top, .about--style2 .about__content-item, .categories--style2 .categories__item, .footer__end-links, .footer__post .footer__wrapper ul li, .footer__about-inner, .account__form-passcheck, .banner__content--style2 .banner__content-star, .section-header .subtitle, .community__reviews-content ul, .community__reviews-content {
+.cta__content-inner .subtitle, .counter--style2 .counter__item-inner, .testimonial--style2 .testimonial__author, .testimonial--style2 .testimonial__footer, .blog--style2 .blog__writer, .blog--style2 .blog__author, .blog--style2 .blog__header, .blog--style1 .blog__header, .course--style4 .course__content-top, .course--style3 .course__mentor, .course--style3 .course__content-bottom, .course--style3 .course__content-top, .course--style2 .course__content, .course--style1 .course__content-top, .about--style3 .about__details-item, .about--style2 .about__content-item, .categories--style2 .categories__item, .footer__end-links, .footer__post .footer__wrapper ul li, .footer__about-inner, .account__form-passcheck, .banner__content--style2 .banner__content-star, .section-header .subtitle, .community__reviews-content ul, .community__reviews-content {
   display: flex;
 }
 
@@ -64,17 +68,21 @@ Tags: airline , travel company.
   display: inline-block;
 }
 
-.blog--style1 .blog__focus-inner, .course--style4 .course__content-footer span, .course--style4 .course__content-footer, .course--style4 .course__author a, .course--style2 .course__focus, .course--style1 .course__focus-inner {
+.blog--style1 .blog__focus-inner, .course--style4 .course__content-footer span, .course--style4 .course__content-footer, .course--style4 .course__author a, .course--style3 .course__focus, .course--style2 .course__focus, .course--style1 .course__focus-inner {
   display: inline-flex;
+}
+
+.course--style3 .course__wrapper ul li {
+  display: inline-grid;
 }
 
 /*=========<<Display property extends end>>=========*/
 /*=========<<Position property extends start>>=========*/
-.newsletter__content-inner--style4, .newsletter__content-inner--style1, .counter--style1 .col-md-3:not(:last-child) .counter__item, .testimonial--style2 .testimonial__wrapper, .community--style2 .community__thumb-inner, .community--style1 .community__reviews, .blog--style2 .blog__thumb, .blog--style1 .blog__meta-comment, .blog--style1 .blog__thumb, .team__item-inner, .story__thumb-inner, .course--style4 .course__thumb, .course--style2 .course__thumb, .course--style1 .course__meta-comment, .course--style1 .course__thumb, .about--style4, .about--style1 .about__thumb-video, .about--style1 .about__thumb-image, .categories--style1 .categories__item-inner, .trk-btn, .footer__linklist-item a, .banner__video-inner, .banner__content--style1, .banner.brand-4 .banner-image, .banner.brand-4, .banner.brand-1 .banner-image, .banner.brand-1, .menu-item-has-children > a, .header-bar, .header-section, .form {
+.newsletter__content-inner--style4, .newsletter__content-inner--style1, .counter--style1 .col-md-3:not(:last-child) .counter__item, .testimonial--style2 .testimonial__wrapper, .community--style2 .community__thumb-inner, .community--style1 .community__reviews, .blog--style2 .blog__thumb, .blog--style1 .blog__meta-comment, .blog--style1 .blog__thumb, .team--style1 .team__item-inner, .story__thumb-inner, .course--style4 .course__thumb, .course--style2 .course__thumb, .course--style1 .course__meta-comment, .course--style1 .course__thumb, .about--style4, .about--style3 .about, .about--style1 .about__thumb-video, .about--style1 .about__thumb-image, .categories--style1 .categories__item-inner, .trk-btn, .footer__linklist-item a, .banner__video-inner, .banner__content--style1, .banner.brand-3, .banner.brand-4 .banner-image, .banner.brand-4, .banner.brand-1 .banner-image, .banner.brand-1, .menu-item-has-children > a, .header-bar, .form {
   position: relative;
 }
 
-.counter--style1 .col-md-3:not(:last-child) .counter__item::before, .testimonial--style2 .testimonial__shape-item, .community--style2 .community__thumb-playbtn, .blog--style1 .blog__btn, .team__item-content--style1, .story__thumb-playbtn, .course--style2 .course__thumb-add, .course--style1 .course__btn, .about--style4 .about__shape-item, .about--style1 .about__thumb-plybtn, .about--style1 .about__thumb-video, .footer__linklist-item a::after, .banner__icon--style2 .banner__icon-item, .banner__icon--style1 .banner__icon-item, .banner__shape-item, .banner__video-inner span, .banner__video, .banner.brand-4::after, .banner.brand-1::after, .menu-item-has-children > a::before, .menu-item-has-children > a::after, .header-bar span, .header-section--style2 {
+.counter--style1 .col-md-3:not(:last-child) .counter__item::before, .testimonial--style2 .testimonial__shape-item, .community--style2 .community__thumb-playbtn, .blog--style1 .blog__btn, .team--style1 .team__item-content--style1, .story__thumb-playbtn, .course--style2 .course__thumb-add, .course--style1 .course__btn, .about--style4 .about__shape-item, .about--style3 .about__icon-item, .about--style1 .about__thumb-plybtn, .about--style1 .about__thumb-video, .footer__linklist-item a::after, .banner__icon--style2 .banner__icon-item, .banner__icon--style1 .banner__icon-item, .banner__shape-item, .banner__video-inner span, .banner__video, .banner.brand-4::after, .banner.brand-1::after, .menu-item-has-children > a::before, .menu-item-has-children > a::after, .header-bar span, .header-section--style2 {
   position: absolute;
 }
 
@@ -88,22 +96,26 @@ Tags: airline , travel company.
 
 /*=========<<Position property extends end>>=========*/
 /*=========<<Text property extends start>>=========*/
-.counter--style1 .counter__item-inner, .testimonial--style1 .testimonial__item, .social__link, .community--style1 .community__reviews, .community--style1 .community__wrapper, .team__item-author, .categories--style4 .categories__item-inner img, .categories--style4 .categories__item-inner, .categories--style2 .categories__item-inner, .categories--style1 .categories__thumb, .categories--style1 .categories__item-content a, .categories--style1 .categories__item-inner, .trk-btn, .account__switch, .account__header, .banner__content--style1, .pageheader__content, .slider__pagination-3, .slider__pagination-2, .slider__pagination-1 {
+.counter--style1 .counter__item-inner, .testimonial--style1 .testimonial__item, .social__link, .community--style1 .community__reviews, .community--style1 .community__wrapper, .team--style2 .team__item-author, .team--style1 .team__item-author, .categories--style4 .categories__item-inner img, .categories--style4 .categories__item-inner, .categories--style3 .categories__item-content, .categories--style2 .categories__item-inner, .categories--style1 .categories__thumb, .categories--style1 .categories__item-content a, .categories--style1 .categories__item-inner, .trk-btn, .account__switch, .account__header, .banner__content--style1, .pageheader__content, .slider__pagination-3, .slider__pagination-2, .slider__pagination-1 {
   text-align: center;
 }
 
-.testimonial--style1 .testimonial__item-content blockquote p {
+.testimonial--style1 .testimonial__item-content blockquote p, .text-btn.text-btn--small {
   font-weight: 400;
 }
 
-.pageheader__content .breadcrumb .breadcrumb-item a, .pageheader__content .breadcrumb .breadcrumb-item {
+.counter--style2 .counter__item-content p, .pageheader__content .breadcrumb .breadcrumb-item a, .pageheader__content .breadcrumb .breadcrumb-item {
   font-weight: 500;
+}
+
+.course--style3 .course__price > p, .about--style3 .about__details-text h6, .categories--style3 .categories__item-content a {
+  font-weight: 600;
 }
 
 /*=========<<Text property extends end>>=========*/
 /*=========<<Margin & padding property extends start>>=========*/
 /*-------<< margin properties >>-------*/
-.social, .blog--style2 .blog__writer-designation p, .blog--style1 .blog__view-count p, .course--style1 .course__view-count p, .footer__post .footer__wrapper ul li:last-child, .account__switch p, .banner__content--style2 .banner__content-star p, .menu, ul,
+.counter--style2 .counter__item-content p, .social, .blog--style2 .blog__writer-designation p, .blog--style1 .blog__view-count p, .course--style1 .course__view-count p, .footer__post .footer__wrapper ul li:last-child, .account__switch p, .banner__content--style2 .banner__content-star p, .menu, ul,
 ol {
   margin-block-end: 0;
 }
@@ -113,7 +125,7 @@ ol {
   margin-block-start: 5px;
 }
 
-.testimonial--style2 .testimonial__author-designation h6, .blog--style2 .blog__author-designation h6, .account__form .form-label {
+.counter--style2 .counter__item-content h3, .testimonial--style2 .testimonial__author-designation h6, .blog--style2 .blog__author-designation h6, .account__form .form-label {
   margin-block-end: 5px;
 }
 
@@ -143,7 +155,7 @@ ol {
   margin-inline-start: 10px;
 }
 
-.blog--style1 .blog__view-count p svg, .course--style1 .course__view-count p svg, .about--style4 .about__content .about-list li img, .about--style1 .about__content-inner .about-list li img, .footer__about-item img, .account__social-btn span, .banner__content--style1 .play-btn svg {
+.blog--style1 .blog__view-count p svg, .course--style3 .course__wrapper ul li:not(:last-child), .course--style1 .course__view-count p svg, .about--style4 .about__content .about-list li img, .about--style1 .about__content-inner .about-list li img, .text-btn.text-btn--small span, .footer__about-item img, .account__social-btn span, .banner__content--style1 .play-btn svg {
   margin-inline-end: 10px;
 }
 
@@ -152,16 +164,16 @@ ol {
   margin-block-start: 15px;
 }
 
-.blog--style2 .blog__thumb, .blog--style1 .blog__thumb, .course--style4 .course__content-top h4, .course--style4 .course__thumb, .course--style1 .course__content-top h4, .course--style1 .course__thumb, .about--style4 .about__content .about-list li, .about--style1 .about__content-inner .about-list li, .categories--style2 .categories__item-inner img, .categories--style2 .categories__item-inner, .footer__linklist-item:not(:last-child) {
+.blog--style2 .blog__thumb, .blog--style1 .blog__thumb, .course--style4 .course__content-top h4, .course--style4 .course__thumb, .course--style3 .course__content-top h4, .course--style3 .course__thumb, .course--style1 .course__content-top h4, .course--style1 .course__thumb, .about--style4 .about__content .about-list li, .about--style1 .about__content-inner .about-list li, .categories--style2 .categories__item-inner img, .categories--style2 .categories__item-inner, .footer__linklist-item:not(:last-child) {
   margin-block-end: 15px;
 }
 
 /*-------<< margin properties >>-------*/
-.community--style2 .community__content-inner h2, .categories--style1 .categories__item-content a, .account__social {
+.community--style2 .community__content-inner h2, .team--style2 .team__item-author, .categories--style1 .categories__item-content a, .account__social {
   margin-block-start: 20px;
 }
 
-.counter--style1 .counter__item-content h3, .testimonial--style2 .testimonial__item-content span, .community--style2 .community__content-inner h2, .blog--style2 .blog__large-date, .blog--style2 .blog__large-content h5, .course--style4 .course__content-top, .course--style1 .course__content-top, .about--style4 .about__content h2, .about--style1 .about__content-inner h3, .footer__post .footer__wrapper ul li, .footer__about-item:not(:last-child), .account__header h4, .banner__content--style2 .banner__content-star, .banner__content--style2 h1, .banner__content--style1 h1, .section-header h2, .subtitle, .form input {
+.counter--style1 .counter__item-content h3, .testimonial--style2 .testimonial__item-content span, .community--style2 .community__content-inner h2, .blog--style2 .blog__large-date, .blog--style2 .blog__large-content h5, .course--style4 .course__content-top, .course--style3 .course__content h6, .course--style3 .course__content-top, .course--style1 .course__content-top, .about--style4 .about__content h2, .about--style1 .about__content-inner h3, .footer__post .footer__wrapper ul li, .footer__about-item:not(:last-child), .account__header h4, .banner__content--style2 .banner__content-star, .banner__content--style2 h1, .banner__content--style1 h1, .section-header h2, .subtitle, .form input {
   margin-block-end: 20px;
 }
 
@@ -170,7 +182,7 @@ ol {
   margin-block-start: 25px;
 }
 
-.blog--style2 .blog__content h5, .blog--style1 .blog__content h6, .categories--style4 .categories__item-content p, .categories--style4 .categories__item-inner img, .footer__about-logo img, .banner__content--style2 p {
+.blog--style2 .blog__content h5, .blog--style1 .blog__content h6, .categories--style4 .categories__item-content p, .categories--style4 .categories__item-inner img, .categories--style3 .categories__item-thumb, .footer__about-logo img, .banner__content--style2 p {
   margin-block-end: 25px;
 }
 
@@ -179,7 +191,7 @@ ol {
   margin-block-start: 30px;
 }
 
-.counter--style1 .counter__item-thumb, .blog--style1 .blog__view, .course--style1 .course__view, .about--style4 .about__content .about-list, .about--style4 .about__content p, .about--style1 .about__content-inner .about-list, .about--style1 .about__content-inner p, .footer__end-links, .footer__end-copyright, .footer__links-tittle h6 {
+.counter--style2 .counter__item-thumb, .counter--style1 .counter__item-thumb, .blog--style1 .blog__view, .course--style1 .course__view, .about--style4 .about__content .about-list, .about--style4 .about__content p, .about--style3 .about__details-item:nth-child(3), .about--style3 .about__details-item:nth-child(1), .about--style1 .about__content-inner .about-list, .about--style1 .about__content-inner p, .footer__end-links, .footer__end-copyright, .footer__links-tittle h6 {
   margin-block-end: 30px;
 }
 
@@ -197,11 +209,11 @@ ol {
 }
 
 /*-------<< margin properties >>-------*/
-.gallery__wrapper a, .testimonial--style2 .testimonial__footer, .testimonial--style1 .testimonial__item-author, .about--style2 .about__content a {
+.gallery__wrapper a, .testimonial--style2 .testimonial__footer, .testimonial--style1 .testimonial__item-author, .about--style3 .about__content a, .about--style2 .about__content a {
   margin-block-start: 40px;
 }
 
-.testimonial--style1 .testimonial__item-content span svg, .blog--style2 .blog__header, .blog--style1 .blog__header, .about--style2 .about__content .section-header, .account__header p, .section-header, .form textarea {
+.testimonial--style1 .testimonial__item-content span svg, .blog--style2 .blog__header, .blog--style1 .blog__header, .about--style3 .about__content .section-header, .about--style2 .about__content .section-header, .account__header p, .section-header, .form textarea {
   margin-block-end: 40px;
 }
 
@@ -218,7 +230,7 @@ ol {
 /*-------<< margin properties >>-------*/
 /*-------<< margin properties >>-------*/
 /*-------<< margin properties >>-------*/
-.slider__pagination-3, .slider__pagination-2, .slider__pagination-1 {
+.course--style3 .course__wrapper .tab-content, .slider__pagination-3, .slider__pagination-2, .slider__pagination-1 {
   margin-block-start: 65px;
 }
 
@@ -243,15 +255,19 @@ ol {
   padding: 5px;
 }
 
-.course--style2 .course__content-price h6 {
+.course--style3 .course__price > p, .course--style2 .course__content-price h6 {
   padding-block: 5px;
 }
 
-.account__content {
+.course--style3 .course__wrapper .nav, .account__content {
   padding: 10px;
 }
 
-.categories--style2 .categories__item-inner {
+.course--style3 .course__content-bottom {
+  padding-block-start: 10px;
+}
+
+.course--style3 .course__price > p, .categories--style2 .categories__item-inner {
   padding-inline: 10px;
 }
 
@@ -319,7 +335,7 @@ ol {
   padding-block: 45px;
 }
 
-.counter--style1 .counter__item-inner, .partner--style2 {
+.counter--style2 .counter__item-inner, .counter--style1 .counter__item-inner, .partner--style2 {
   padding-block: 65px;
 }
 
@@ -337,11 +353,11 @@ ol {
 
 /*=========<<Margin property extends end>>=========*/
 /*=========<<overflow property extends start>>=========*/
-.partner, .gallery, .community, .blog--style2 .blog__thumb, .blog--style2 .blog__item, .blog--style2 .blog__large-thumb, .blog--style2 .blog__wrapper .brand2-bg-1, .blog--style1 .blog__thumb, .blog--style1 .blog__item, .blog, .team__item-thumb, .team, .story, .course--style4 .course__thumb, .course--style4 .course__item, .course--style2 .course__thumb-inner, .course--style1 .course__thumb, .course--style1 .course__item, .course, .about, .categories--style1 .categories__item-inner, .categories, .trk-btn, .footer__post .footer__wrapper ul li .thumb, .footer, .account, .blog--style2 .blog__content h5, .blog--style2 .blog__large-content h5, .blog--style1 .blog__content h6, .course--style4 .course__content-top h4, .course--style1 .course__content h6, .course--style1 .course__content-top h4, .footer__post .footer__wrapper ul li .content h6 a {
+.partner, .gallery, .community, .blog--style2 .blog__thumb, .blog--style2 .blog__item, .blog--style2 .blog__large-thumb, .blog--style2 .blog__wrapper .brand2-bg-1, .blog--style1 .blog__thumb, .blog--style1 .blog__item, .blog, .team--style2 .team__item-thumb, .team--style1 .team__item-thumb, .team, .story, .course--style4 .course__thumb, .course--style4 .course__item, .course--style3 .course__thumb, .course--style3 .course__item, .course--style2 .course__thumb-inner, .course--style1 .course__thumb, .course--style1 .course__item, .course, .about, .categories--style3 .categories__item-thumb, .categories--style1 .categories__item-inner, .categories, .trk-btn, .footer__post .footer__wrapper ul li .thumb, .footer, .account, .blog--style2 .blog__content h5, .blog--style2 .blog__large-content h5, .blog--style1 .blog__content h6, .course--style4 .course__content-top h4, .course--style3 .course__content h6, .course--style3 .course__content-top h4, .course--style1 .course__content h6, .course--style1 .course__content-top h4, .footer__post .footer__wrapper ul li .content h6 a {
   overflow: hidden;
 }
 
-.partner, .gallery, .community, .blog--style2 .blog__thumb, .blog--style2 .blog__item, .blog--style2 .blog__large-thumb, .blog--style2 .blog__wrapper .brand2-bg-1, .blog--style1 .blog__thumb, .blog--style1 .blog__item, .blog, .team__item-thumb, .team, .story, .course--style4 .course__thumb, .course--style4 .course__item, .course--style2 .course__thumb-inner, .course--style1 .course__thumb, .course--style1 .course__item, .course, .about, .categories--style1 .categories__item-inner, .categories, .trk-btn, .footer__post .footer__wrapper ul li .thumb, .footer, .account, .blog--style2 .blog__content h5, .blog--style2 .blog__large-content h5, .blog--style1 .blog__content h6, .course--style4 .course__content-top h4, .course--style1 .course__content h6, .course--style1 .course__content-top h4, .footer__post .footer__wrapper ul li .content h6 a {
+.partner, .gallery, .community, .blog--style2 .blog__thumb, .blog--style2 .blog__item, .blog--style2 .blog__large-thumb, .blog--style2 .blog__wrapper .brand2-bg-1, .blog--style1 .blog__thumb, .blog--style1 .blog__item, .blog, .team--style2 .team__item-thumb, .team--style1 .team__item-thumb, .team, .story, .course--style4 .course__thumb, .course--style4 .course__item, .course--style3 .course__thumb, .course--style3 .course__item, .course--style2 .course__thumb-inner, .course--style1 .course__thumb, .course--style1 .course__item, .course, .about, .categories--style3 .categories__item-thumb, .categories--style1 .categories__item-inner, .categories, .trk-btn, .footer__post .footer__wrapper ul li .thumb, .footer, .account, .blog--style2 .blog__content h5, .blog--style2 .blog__large-content h5, .blog--style1 .blog__content h6, .course--style4 .course__content-top h4, .course--style3 .course__content h6, .course--style3 .course__content-top h4, .course--style1 .course__content h6, .course--style1 .course__content-top h4, .footer__post .footer__wrapper ul li .content h6 a {
   overflow: hidden;
 }
 
@@ -353,7 +369,7 @@ ol {
 
 /*=========<<Cursor property extends end>>=========*/
 /*=========<< Height-Width property extends start>>=========*/
-.blog--style2 .blog__thumb img, .blog--style2 .blog__large-thumb img, .blog--style1 .blog__thumb img, .team__item-thumb img, .course--style4 .course__thumb img, .course--style2 .course__thumb-inner img, .course--style1 .course__thumb img, .account__social-btn, .account__form .default-btn, .header-bar span, .header-section.header-fixed, .form input,
+.blog--style2 .blog__thumb img, .blog--style2 .blog__large-thumb img, .blog--style1 .blog__thumb img, .team--style2 .team__item-thumb img, .team--style1 .team__item-thumb img, .course--style4 .course__thumb img, .course--style3 .course__thumb img, .course--style2 .course__thumb-inner img, .course--style1 .course__thumb img, .categories--style3 .categories__item-thumb img, .account__social-btn, .account__form .default-btn, .header-bar span, .header-section.header-fixed, .form input,
 .form textarea {
   width: 100%;
 }
@@ -367,7 +383,7 @@ ol {
 
 /*=========<< List Style property extends end>>=========*/
 /* @@@@@@@@@@@@@  Extend Property CSS Writing Now  @@@@@@@@@@@@@@ */
-.blog--style2 .blog__content h5, .blog--style2 .blog__large-content h5, .blog--style1 .blog__content h6, .course--style4 .course__content-top h4, .course--style1 .course__content h6, .course--style1 .course__content-top h4, .footer__post .footer__wrapper ul li .content h6 a {
+.blog--style2 .blog__content h5, .blog--style2 .blog__large-content h5, .blog--style1 .blog__content h6, .course--style4 .course__content-top h4, .course--style3 .course__content h6, .course--style3 .course__content-top h4, .course--style1 .course__content h6, .course--style1 .course__content-top h4, .footer__post .footer__wrapper ul li .content h6 a {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -1636,6 +1652,14 @@ ol {
   background-color: #1F6F90;
 }
 
+.brand-3 {
+  background-color: #463266;
+}
+
+.brand3-bg-1 {
+  background-color: #FFF7F5;
+}
+
 .brand-4 {
   background-color: #248D88;
 }
@@ -1719,6 +1743,13 @@ ol {
   max-inline-size: 13ch;
 }
 
+.header-section {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background: transparent;
+}
 .header-section--style2 {
   content: "";
   width: 100%;
@@ -2118,6 +2149,11 @@ ol {
     font-size: 18px;
   }
 }
+@media (min-width: 768px) {
+  .section-header p.style3 {
+    max-inline-size: 50ch;
+  }
+}
 @media (min-width: 992px) {
   .section-header a {
     margin-top: 45px;
@@ -2129,6 +2165,12 @@ ol {
 .section-header .subtitle p {
   font-size: 1.25rem;
   font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #FF7350;
+}
+.section-header .subtitle--style3 p {
+  font-size: 1.125rem;
+  font-weight: 500;
   font-family: "Poppins", sans-serif;
   color: #FF7350;
 }
@@ -2195,7 +2237,7 @@ ol {
 }
 @media (min-width: 992px) {
   .banner.brand-1 {
-    padding-block-start: 60px;
+    padding-block-start: 132px;
     padding-block-end: 90px;
   }
   .banner.brand-1.brand-4 {
@@ -2993,7 +3035,7 @@ ol {
 .trk-btn:hover.trk-btn--secondary1 {
   transform: translateY(-3px);
 }
-.trk-btn:hover.trk-btn--secondary2 svg, .trk-btn:hover.trk-btn--primary2 svg {
+.trk-btn:hover.trk-btn--secondary3 svg, .trk-btn:hover.trk-btn--secondary2 svg, .trk-btn:hover.trk-btn--primary2 svg {
   -webkit-transform: translateX(5px);
   -moz-transform: translateX(5px);
   -ms-transform: translateX(5px);
@@ -3058,6 +3100,18 @@ ol {
   display: inline-flex;
   font-weight: 700;
   color: #101828;
+}
+.text-btn.text-btn--small {
+  font-size: 1rem;
+  color: #101828;
+  font-family: "Inter", sans-serif;
+}
+.text-btn.text-btn--small span {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .text-btn span {
   -webkit-transition: all 0.3s linear;
@@ -3213,6 +3267,33 @@ ol {
 .categories--style2 .categories__item-content h5 {
   font-weight: 600;
 }
+.categories--style3 .categories__item-thumb img {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  object-fit: cover;
+}
+.categories--style3 .categories__item-content a {
+  color: #101828;
+  font-size: 1.125rem;
+}
+@media (min-width: 992px) {
+  .categories--style3 .categories__item-content a {
+    font-size: 18px;
+  }
+}
+.categories--style3 .categories__item:hover .categories__item-thumb img {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.categories--style3 .categories__item:hover .categories__item-content a {
+  text-decoration: underline !important;
+}
 .categories--style4 {
   padding-block-start: 190px;
 }
@@ -3310,6 +3391,72 @@ ol {
 }
 .about--style2 .about__content-item {
   gap: 15px;
+}
+@media (min-width: 576px) {
+  .about--style3 .about__details {
+    column-count: 2;
+    column-gap: 25px;
+  }
+}
+.about--style3 .about__details-item {
+  gap: 15px;
+}
+@media (max-width: 575px) {
+  .about--style3 .about__details-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+.about--style3 .about__details-text p {
+  margin-bottom: 0;
+}
+.about--style3 .about__icon-item:nth-child(1) {
+  display: none;
+  width: 100px;
+  top: 8%;
+  left: 0%;
+}
+@media (min-width: 768px) {
+  .about--style3 .about__icon-item:nth-child(1) {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  .about--style3 .about__icon-item:nth-child(1) {
+    width: 150px;
+  }
+}
+@media (min-width: 1200px) {
+  .about--style3 .about__icon-item:nth-child(1) {
+    width: auto;
+  }
+}
+.about--style3 .about__icon-item:nth-child(2) {
+  display: none;
+  width: 100px;
+  right: 10%;
+  top: 10%;
+}
+.about--style3 .about__icon-item:nth-child(2).about__icon-item--animation {
+  -webkit-animation: floating 2s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate;
+  -moz-animation: floating 2s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate;
+  -ms-animation: floating 2s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate;
+  -o-animation: floating 2s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate;
+  animation: floating 2s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate;
+}
+@media (min-width: 768px) {
+  .about--style3 .about__icon-item:nth-child(2) {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  .about--style3 .about__icon-item:nth-child(2) {
+    width: 150px;
+  }
+}
+@media (min-width: 1200px) {
+  .about--style3 .about__icon-item:nth-child(2) {
+    width: auto;
+  }
 }
 .about--style4 .about__content h2 {
   color: #248D88;
@@ -3572,6 +3719,85 @@ ol {
   background-color: #D6F2FE;
   border-radius: 8px;
 }
+.course--style3 .course__wrapper .nav {
+  background: rgba(255, 227, 220, 0.6);
+}
+.course--style3 .course__wrapper ul li a {
+  color: #667085;
+}
+.course--style3 .course__wrapper ul li a:hover, .course--style3 .course__wrapper ul li a.active {
+  background-color: #FF7350;
+  color: #fff;
+}
+.course--style3 .course__item {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  background-color: #fff;
+}
+.course--style3 .course__item:hover .course__thumb img {
+  -webkit-transform: scale(1.06);
+  -moz-transform: scale(1.06);
+  -ms-transform: scale(1.06);
+  -o-transform: scale(1.06);
+  transform: scale(1.06);
+}
+.course--style3 .course__thumb img {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.course--style3 .course__content {
+  padding-inline: 15px;
+  padding-block-end: 20px;
+  padding-block-start: 15px;
+}
+.course--style3 .course__content-top h4 {
+  font-weight: 600;
+}
+.course--style3 .course__content-top h4:hover a {
+  color: #081A28;
+}
+.course--style3 .course__content h6 {
+  font-weight: 600;
+}
+.course--style3 .course__content-bottom--border {
+  border-top: 1px solid rgba(8, 26, 40, 0.1);
+}
+.course--style3 .course__content-enroll a span svg {
+  transform: rotate(-45deg);
+  color: #FF7350;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.course--style3 .course__content-enroll:hover a {
+  text-decoration: underline;
+}
+.course--style3 .course__content-enroll:hover a span svg {
+  transform: rotate(0deg);
+}
+.course--style3 .course__focus {
+  gap: 5px;
+}
+.course--style3 .course__focus svg {
+  color: #FF7350;
+}
+.course--style3 .course__price > p {
+  font-size: 1.25rem;
+  font-family: "Poppins", sans-serif;
+  background-color: #0F7494;
+  color: #fff;
+}
+.course--style3 .course__mentor {
+  gap: 8px;
+}
 .course--style4 {
   padding-block: 250px;
 }
@@ -3736,10 +3962,10 @@ ol {
   }
 }
 
-.team__item-thumb {
+.team--style1 .team__item-thumb {
   border-radius: 20px;
 }
-.team__item-thumb img {
+.team--style1 .team__item-thumb img {
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
@@ -3747,7 +3973,7 @@ ol {
   transition: all 0.3s linear;
   object-fit: cover;
 }
-.team__item-content--style1 {
+.team--style1 .team__item-content--style1 {
   color: #fff;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -3756,7 +3982,7 @@ ol {
   bottom: -10%;
   width: 100%;
 }
-.team__item-author h6 {
+.team--style1 .team__item-author h6 {
   color: #fff;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -3764,28 +3990,53 @@ ol {
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.team__item:hover .team__item-thumb img {
+.team--style1 .team__item:hover .team__item-thumb img {
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
   -ms-transform: scale(1.05);
   -o-transform: scale(1.05);
   transform: scale(1.05);
 }
-.team__item:hover .team__item-author h6 a {
+.team--style1 .team__item:hover .team__item-author h6 a {
   color: #fff;
 }
-.team__wrapper .section-header p {
+.team--style1 .team__wrapper .section-header p {
   font-size: 1rem;
 }
 @media (max-width: 767px) {
-  .team__wrapper .section-header {
+  .team--style1 .team__wrapper .section-header {
     margin-block-end: 20px;
   }
 }
 @media (max-width: 1199px) {
-  .team__wrapper .section-header {
+  .team--style1 .team__wrapper .section-header {
     margin-block-end: 20px;
   }
+}
+.team--style2 .team__item-thumb img {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  object-fit: cover;
+}
+.team--style2 .team__item-author h6 {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.team--style2 .team__item:hover .team__item-thumb img {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.team--style2 .team__item:hover .team__item-author h6 a {
+  color: #463266;
 }
 
 @media (min-width: 992px) {
@@ -4456,6 +4707,16 @@ ol {
     right: 0;
     top: 30%;
   }
+}
+.counter--style2 .counter__item-inner {
+  gap: 25px;
+}
+.counter--style2 .counter__item-content h3 {
+  color: #fff;
+}
+.counter--style2 .counter__item-content p {
+  font-size: 1.125rem;
+  color: #fff;
 }
 
 .cta__content-inner .subtitle {

@@ -54,4 +54,34 @@
             }
         }
     }
+    &--style2{
+        .counter {
+            &__item {
+
+
+                &-inner {
+                    @extend %d-flex, %py-65;
+                    gap: 25px;
+                }
+ 
+                &-thumb {
+                    @extend %mb-30;
+                }
+
+                &-content {
+                    h3 {
+                        @extend %mb-5;
+                        color: $white-color;
+
+                    }
+
+                    p {
+                        @extend %text-medium, %mb-0;
+                        @include font-size(18px);
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+    }
 }

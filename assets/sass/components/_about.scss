@@ -1,5 +1,6 @@
 .about {
-   @extend %of-hidden;                                                           
+    @extend %of-hidden;
+
     &--style1 {
         .about {
             &__thumb {
@@ -28,7 +29,7 @@
                         right: 0%;
                     }
 
- 
+
                 }
 
                 &-plybtn {
@@ -125,10 +126,12 @@
 
     &--style2 {
         .about {
+
             &__content {
                 .section-header {
                     @extend %mb-40;
                 }
+
 
                 &-item {
                     @extend %d-flex,
@@ -138,6 +141,120 @@
 
                 a {
                     @extend %mt-40;
+                }
+            }
+        }
+    }
+
+    &--style3 {
+        .about {
+            @extend %p-rel;
+
+            &__content {
+                .section-header {
+                    @extend %mb-40;
+                }
+
+                a {
+                    @extend %mt-40;
+                }
+            }
+
+            &__details {
+
+                @include breakpoint(sm) {
+                    column-count: 2;
+                    column-gap: 25px;
+                }
+
+                &-item {
+                    @extend %d-flex,
+                    %align-i-start;
+                    gap: 15px;
+
+                    &:nth-child(1) {
+                        @extend %mb-30;
+                    }
+
+                    &:nth-child(3) {
+                        @extend %mb-30;
+                    }
+
+                    @include breakpoint (max-sm) {
+                        &:not(:last-child) {
+                            margin-bottom: 30px;
+                        }
+
+                    }
+
+                }
+
+                &-text {
+                    h6 {
+                        @extend %text-semibold;
+                    }
+
+                    p {
+                        margin-bottom: 0;
+                    }
+
+                }
+            }
+
+            // &__thumb{
+            //     @extend %p-rel;
+            // }
+
+            &__icon {
+                &-item {
+                    @extend %p-abs;
+
+                    &:nth-child(1) {
+                        display: none;
+                        width: 100px;
+                        top: 8%;
+                        left: 0%;
+
+                        // &.banner__icon-item--animation {
+                        //     @include animation(left-right 2s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate);
+                        // }
+
+                        @include breakpoint(md) {
+                            display: block;
+                        }
+
+                        @include breakpoint(lg) {
+                            width: 150px;
+                        }
+
+                        @include breakpoint(xl) {
+                            width: auto;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        display: none;
+                        width: 100px;
+                        right: 10%;
+                        top: 10%;
+
+                        &.about__icon-item--animation {
+                            @include animation(floating 2s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate);
+                        }
+
+                        @include breakpoint(md) {
+                            display: block;
+                        }
+
+                        @include breakpoint(lg) {
+                            width: 150px;
+                        }
+
+                        @include breakpoint(xl) {
+                            width: auto;
+                        }
+                    }
+
                 }
             }
         }

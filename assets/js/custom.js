@@ -443,6 +443,24 @@ const Swiper7 = new Swiper('.testimonial__slider2', {
 
 
 
+// home 3 slider
+// team slider 
+const team__slider1 = new Swiper('.team__slider1', {
+    // slidesPerView: 2,
+    direction: "vertical",
+    grabCursor: true,
+    spaceBetween: 24,
+    mousewheel: true,
+    loop:true,
+    autoplay: {
+        delay: 1,
+        disableOnInteraction: true,
+    },
+    speed: 3000,
+});
+
+
+
 
 
 // counter

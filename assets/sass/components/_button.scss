@@ -108,11 +108,13 @@
       color: $brand-color-1;
       transform: translateY(-3px);
     }
+
     &.trk-btn--secondary1 {
       transform: translateY(-3px);
     }
 
     // home 2
+    &.trk-btn--secondary3,
     &.trk-btn--secondary2,
     &.trk-btn--primary2 {
       svg {
@@ -121,12 +123,14 @@
     }
 
     // home 4
-    &.trk-btn--style2{
+    &.trk-btn--style2 {
       transform: translateY(-3px);
     }
+
     &.trk-btn--primary4,
     &.trk-btn--secondary4 {
       color: $title-color;
+
       svg {
         @include add-prefix(transform, translateX(5px));
       }
@@ -134,6 +138,7 @@
 
     &.trk-btn--defult {
       color: $white-color;
+
       svg {
         @include add-prefix(transform, translateX(5px));
       }
@@ -152,7 +157,7 @@
     background-color: transparent;
     color: $title-color;
     border-color: $title-color;
-    
+
 
     &.brand-2 {
       border: 1.5px solid $brand-color-2;
@@ -185,6 +190,18 @@
   display: inline-flex;
   font-weight: 700;
   color: $title-color;
+
+  &.text-btn--small {
+    @extend %text-regular;
+    @include font-size(16px);
+    color: $title-color;
+    font-family: $text-font;
+
+    span {
+      @extend %me-10;
+      @include add-prefix(transition, $transition);
+    }
+  }
 
   span {
     @extend %ms-10;

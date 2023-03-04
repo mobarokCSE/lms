@@ -40,7 +40,8 @@
 
                 &-content {
                     a {
-                        @extend %text-center, %mt-20;
+                        @extend %text-center,
+                        %mt-20;
                         color: $title-color;
                         @include font-size(16px);
 
@@ -58,24 +59,27 @@
             }
 
             &__thumb {
-                @extend %p-30, %text-center;
+                @extend %p-30,
+                %text-center;
                 border-radius: 16px;
                 transition: $transition;
                 max-width: 132px;
                 margin: auto auto 20px auto;
 
-                @include breakpoint (md){
+                @include breakpoint (md) {
                     padding: 35px;
                 }
 
                 &--cat1 {
                     background-color: $course-color-1;
                 }
+
                 &--cat2 {
-                     background-color: $course-color-2;
+                    background-color: $course-color-2;
                 }
+
                 &--cat3 {
-                     background-color: $course-color-3;
+                    background-color: $course-color-3;
                 }
             }
         }
@@ -144,6 +148,55 @@
                     h5 {
                         font-weight: 600;
                     }
+                }
+            }
+        }
+    }
+
+    &--style3 {
+        .categories {
+            &__item {
+                &-thumb {
+                    @extend %of-hidden,
+                    %mb-25;
+
+                    img {
+                        @extend %w-100;
+                        @include add-prefix(transition, $transition);
+                        object-fit: cover;
+                    }
+                }
+
+                &-content {
+                    @extend %text-center;
+
+                    a { @extend %text-semibold;
+                        color: $title-color;
+                        @include font-size(18px);
+
+                        @include breakpoint(lg) {
+                            font-size: 18px;
+                        }
+
+                    }
+                }
+
+                &:hover {
+
+                    .categories__item {
+                        &-thumb {
+                            img {
+                                @include add-prefix(transform, scale(1.05));
+                            }
+                        }
+
+                        &-content {
+                            a {
+                                text-decoration: underline !important;
+                            }
+                        }
+                    }
+
                 }
             }
         }

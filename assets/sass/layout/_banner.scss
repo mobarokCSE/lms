@@ -18,7 +18,7 @@
         }
 
         @include breakpoint(lg) {
-            padding-block-start: 60px;
+            padding-block-start: 132px;
             padding-block-end: 90px;
 
             &.brand-4 {
@@ -103,6 +103,9 @@
         }
     }
 
+    &.brand-3{
+        @extend %p-rel;
+    }
 
     &__content {
 

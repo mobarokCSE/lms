@@ -1,84 +1,138 @@
 .team {
     @extend %of-hidden;
 
-    &__item {
-        &-inner {
-            @extend %p-rel;
-        }
+    &--style1 {
+        .team {
+            &__item {
+                &-inner {
+                    @extend %p-rel;
+                }
 
-        &-thumb {
-            @extend %of-hidden;
-            border-radius: 20px;
-
-            img {
-                @extend %w-100;
-                @include add-prefix(transition, $transition);
-                object-fit: cover;
-            }
-        }
-
-        &-content {
-            &--style1 {
-                @extend %p-abs;
-                color: $white-color;
-                transform: translate(-50%, -50%);
-                position: absolute;
-                content: "";
-                left: 50%;
-                bottom: -10%;
-                width: 100%;
-
-            }
-        }
-
-        &-author {
-            @extend %text-center;
-
-            h6 {
-                color: $white-color;
-                @include add-prefix(transition, $transition);
-            }
-        }
-
-        &:hover {
-
-            .team__item {
                 &-thumb {
+                    @extend %of-hidden;
+                    border-radius: 20px;
+
                     img {
-                        @include add-prefix(transform, scale(1.05));
+                        @extend %w-100;
+                        @include add-prefix(transition, $transition);
+                        object-fit: cover;
+                    }
+                }
+
+                &-content {
+                    &--style1 {
+                        @extend %p-abs;
+                        color: $white-color;
+                        transform: translate(-50%, -50%);
+                        position: absolute;
+                        content: "";
+                        left: 50%;
+                        bottom: -10%;
+                        width: 100%;
+
                     }
                 }
 
                 &-author {
+                    @extend %text-center;
+
                     h6 {
-                        a {
-                            color: $white-color;
+                        color: $white-color;
+                        @include add-prefix(transition, $transition);
+                    }
+                }
+
+                &:hover {
+
+                    .team__item {
+                        &-thumb {
+                            img {
+                                @include add-prefix(transform, scale(1.05));
+                            }
                         }
 
+                        &-author {
+                            h6 {
+                                a {
+                                    color: $white-color;
+                                }
 
+
+                            }
+                        }
+                    }
+
+                }
+
+
+
+            }
+
+            &__wrapper {
+                .section-header {
+
+                    // margin-block-end: 0;
+                    p {
+                        @include font-size(16px);
+                    }
+
+                    @include breakpoint(max-md) {
+                        margin-block-end: 20px;
+                    }
+
+                    @include breakpoint(max-xl) {
+                        margin-block-end: 20px;
                     }
                 }
             }
-
-        }
-
-
-
-    }
-
-    &__wrapper {
-        .section-header {
-            // margin-block-end: 0;
-            p{
-                @include font-size(16px);
-            }
-
-            @include breakpoint(max-md){
-                margin-block-end: 20px;
-            }
-            @include breakpoint(max-xl){ 
-                margin-block-end: 20px;
-            }
         }
     }
+
+    &--style2 {
+        .team {
+            &__item {
+                &-thumb {
+                    @extend %of-hidden;
+
+                    img {
+                        @extend %w-100;
+                        @include add-prefix(transition, $transition);
+                        object-fit: cover;
+                    }
+                }
+
+                &-author {
+                    @extend %text-center, %mt-20;
+
+                    h6 {
+                        @include add-prefix(transition, $transition);
+                    }
+                }
+
+                &:hover {
+
+                    .team__item {
+                        &-thumb {
+                            img {
+                                @include add-prefix(transform, scale(1.05));
+                            }
+                        }
+
+                        &-author {
+                            h6 {
+                                a {
+                                    color: $brand-color-3; 
+                                }
+
+
+                            }
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+
 }

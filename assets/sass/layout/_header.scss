@@ -4,13 +4,19 @@
 
 //  --------------  >>>  header style start here <<< ------------- //
 .header-section {
-  @extend %p-rel;
+  // @extend %p-rel;
+
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background: transparent;
 
   &--style2 {
     @extend %p-abs;
     content: "";
     width: 100%;
-  }
+  } 
 
   &.header-fixed {
     @extend %w-100;
@@ -47,7 +53,9 @@
 
   .header-start {
     &--style1 {
-      @extend %flex, %align-i-end, %justify-between;
+      @extend %flex,
+      %align-i-end,
+      %justify-between;
 
       @include breakpoint(lg) {
         min-width: 80%;
@@ -59,7 +67,8 @@
     }
 
     &--style2 {
-      @extend %flex, %align-i-center;
+      @extend %flex,
+      %align-i-center;
 
       @include breakpoint(lg) {
         gap: 10px;
@@ -108,15 +117,16 @@
 }
 
 .menu {
-  @extend %flex, %mb-0;
+  @extend %flex,
+  %mb-0;
   column-gap: 10px;
 
   @include breakpoint(lg) {
     margin-right: 50px;
   }
 
-  > li {
-    > a {
+  >li {
+    >a {
       @include font-size(18px);
       padding: 15px 22px;
       text-transform: capitalize;
@@ -146,8 +156,8 @@
   }
 
   &--style2 {
-    > li {
-      > a {
+    >li {
+      >a {
         color: $title-color;
       }
     }
@@ -216,7 +226,7 @@
       }
 
       &:hover {
-        > .submenu {
+        >.submenu {
           -webkit-transform: translateY(15px);
           -ms-transform: translateY(15px);
           transform: translateY(15px);
@@ -372,7 +382,7 @@
 }
 
 .menu-item-has-children {
-  > a {
+  >a {
     @extend %p-rel;
 
     &::after {
@@ -437,7 +447,7 @@
   }
 
   &:hover {
-    > a {
+    >a {
       &:before {
         transform: rotate(90deg);
         opacity: 0;
@@ -446,7 +456,7 @@
   }
 
   &.open {
-    > a {
+    >a {
       &:before {
         transform: rotate(90deg);
         opacity: 0;
@@ -471,7 +481,7 @@
     font-weight: 600;
   }
 
-  p {
+  p { 
     font-weight: 500;
 
     &.style2 {
@@ -485,6 +495,12 @@
         font-size: 18px;
       }
     }
+
+    &.style3 {
+      @include breakpoint(md) {
+        max-inline-size: 50ch;
+      }
+    }
   }
 
   a {
@@ -496,8 +512,11 @@
   }
 
   .subtitle {
-    @extend %d-flex, %align-i-center;
+    @extend %d-flex,
+    %align-i-center;
     gap: 10px;
+
+
 
     p {
       @include font-size(20px);
@@ -508,6 +527,16 @@
 
     &--style2 {
       @extend %justify-center;
+    }
+
+    &--style3 {
+      p{
+              @include font-size(18px);
+      font-weight: 500;
+      font-family: $title-font;
+      color: $secondary-color-2;
+      }
+
     }
   }
 
