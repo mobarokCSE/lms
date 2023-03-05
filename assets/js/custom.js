@@ -445,20 +445,48 @@ const Swiper7 = new Swiper('.testimonial__slider2', {
 
 // home 3 slider
 // team slider 
-const team__slider1 = new Swiper('.team__slider1', {
-    // slidesPerView: 2,
-    direction: "vertical",
-    grabCursor: true,
+// const swiper11 = new Swiper('.team__slider1', {
+//     slidesPerView: 1,
+//     direction: "vertical",
+//     grabCursor: true,
+//     spaceBetween: 24,
+//     mousewheel: true,
+//     loop:true,
+//     autoplay: {
+//         delay: 1,
+//         disableOnInteraction: true,
+//     },
+//     speed: 3000,
+// });
+
+
+// blog
+const BlogSlider = new Swiper('.blog__slider', {
     spaceBetween: 24,
-    mousewheel: true,
-    loop:true,
+    grabCursor: true,
+    loop: true,
+    breakpoints: {
+        576: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        992: {
+            slidesPerView: 4,
+            spaceBetween: 15,
+        },
+        1400: {
+            slidesPerView: 4,
+            spaceBetween: 25,
+        }
+    },
     autoplay: {
         delay: 1,
         disableOnInteraction: true,
     },
     speed: 3000,
 });
-
 
 
 

@@ -3,6 +3,19 @@
     color: $white-color;
     font-weight: 400;
 
+    &__upper {
+        @extend %pb-65;
+        border-bottom: 1px solid rgba($white-color, $alpha: .30);
+    }
+
+    &__cta {
+        &-content {
+            h2 {
+                color: $white-color;
+            }
+        }
+    }
+
     &__top {
         &--style1 {
             padding-top: 200px;
@@ -10,9 +23,14 @@
             @include breakpoint(sm) {
                 padding-block-start: 250px;
             }
+
             @include breakpoint(lg) {
                 padding-block-start: 332px;
             }
+        }
+
+        &--style2 {
+            @extend %pt-65;
         }
 
     }
@@ -32,7 +50,7 @@
 
         &-item {
             &:not(:last-child) {
-                @extend %mb-20; 
+                @extend %mb-20;
             }
 
             img {
@@ -110,7 +128,7 @@
 
 
             &:not(:last-child) {
-                @extend %mb-15; 
+                @extend %mb-15;
             }
 
             a {
@@ -137,32 +155,37 @@
 
                     &::after {
                         opacity: 1;
-                        left: -12px; 
+                        left: -12px;
                     }
                 }
             }
         }
     }
+
     &__post {
         .footer {
             &__wrapper {
                 ul {
                     li {
-                        @extend %d-flex;
+                        @extend %d-flex,
+                        %align-i-center;
                         @extend %mb-20;
                         @extend %pb-20;
-                        // border-bottom: 1px solid $border-color;
+                        gap: 10px;
+
                         &:last-child {
                             border-bottom: none !important;
                             @extend %mb-0;
                             @extend %pb-0;
                         }
+
                         &:hover {
                             .thumb {
-                                img { 
+                                img {
                                     @include add-prefix(transform, scale(1.1));
                                 }
                             }
+
                             .content {
                                 h6 {
                                     a {
@@ -171,30 +194,45 @@
                                 }
                             }
                         }
+
                         .thumb {
-                            width: 80px;
+                            // width: 80px;
                             @extend %of-hidden;
-                        }
-                        .content {
-                            width: calc(100% - 80px);
-                            @extend %ps-15;
-                            h6 {
-                                @include font-size(16px);
-                                a {
-                                    @extend %text-clamp-2;
+
+                            a {
+                                img {
+                                    width: 80px;
+                                    @extend %of-hidden;
+                                    @include add-prefix(transition, $transition);
                                 }
                             }
+                        }
+
+                        .content {
+                            width: calc(100% - 80px);
+
+                            p {
+                                @include font-size(16px);
+
+                                a {
+                                    @extend %text-clamp-1,
+                                    %mb-10;
+                                    color: $white-color;
+                                }
+                            }
+
                             .date {
                                 i {
                                     @extend %me-5;
                                 }
                             }
-                        } 
+                        }
                     }
                 }
             }
         }
     }
+
     &__end {
         border-top: 1px solid rgba($white-color, $alpha: .30);
         @include font-size(14px);
@@ -211,17 +249,19 @@
 
         &-links {
             @extend %d-flex,
-            %align-i-center, 
+            %align-i-center,
             %mt-25,
             %mb-30;
 
-            @include breakpoint (max-sm){
+            @include breakpoint (max-sm) {
                 justify-content: space-between;
             }
-            @include breakpoint(sm) {            
+
+            @include breakpoint(sm) {
                 gap: 10px;
             }
-            @include breakpoint(md) {            
+
+            @include breakpoint(md) {
                 gap: 20px;
             }
 
@@ -233,4 +273,14 @@
             }
         }
     }
+
+    &__bottom {
+        background-color: $brand3-bg-4;
+        &-copyright {
+            @extend %py-25;
+            
+        }
+    }
+
+
 }

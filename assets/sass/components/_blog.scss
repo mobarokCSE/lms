@@ -292,7 +292,7 @@
                 &-content {
                     @extend %px-25;
 
-                    @include breakpoint(max-md){
+                    @include breakpoint(max-md) {
                         padding-block: 25px;
                     }
 
@@ -466,6 +466,97 @@
                     }
                 }
             }
+        }
+    }
+
+    &--style3 {
+        .blog {
+ 
+            // single blog
+            &__item {
+                @extend %of-hidden;
+                @include add-prefix(transition, $transition);
+                background-color: $brand3-bg-3;
+                box-shadow: 8px 16px 30px 0px #9CBED91F;
+
+                &:hover {
+                    box-shadow: -2px 8px 24px 0px #489CBE33;
+
+                    .blog__thumb {
+                        img {
+                            @include add-prefix (transform, scale(1.09));
+                        }
+                    }
+
+                    .blog__content {
+                        h5 {
+                            a {
+                                color: $secondary-color-2;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__thumb {
+                @extend %mb-15,
+                %p-rel,
+                %of-hidden;
+
+                img {
+                    @extend %w-100;
+                    @include add-prefix(transition, $transition);
+                }
+            }
+
+            &__content {
+                padding-inline: 25px;
+                padding-block-end: 25px;
+                padding-block-start: 15px;
+
+                @include breakpoint(lg) {}
+
+                h6 {
+                    @extend %text-clamp-2,
+                    %mb-25,
+                    %mt-15;
+                    font-weight: 600;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                }
+
+                &-bottom {
+                    @extend %mt-15;
+
+                    a {
+                        color: $text-color-light;
+                    }
+
+                    &--border {
+                        @extend %pt-25;
+                        border-top: 1px solid rgba($brand-color-1, $alpha: .1);
+                    }
+
+                }
+
+            
+            }
+
+            &__meta {
+                &-tag {
+                    @extend %d-inline-block;
+                    @include font-size(14px);
+                    padding: .15rem 1rem;
+                    color: $white-color;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    background-color: $brand-color-3;
+                }
+            }
+
         }
     }
 

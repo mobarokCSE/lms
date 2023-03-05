@@ -154,8 +154,15 @@
             color: $text-color;
             padding: 15px 30px;
 
+            &.style1{
+                border-radius: 0;
+                border: none;
+                background-color:  $brand3-bg-4;
+                color: $white-color;
+            }
+
             &::placeholder {
-                color: $text-color;
+                color: $white-color;
             }
 
             &:focus-within {
@@ -169,7 +176,7 @@
         input {
             @extend %mb-20;
         }
-
+ 
         textarea {
             @extend %mb-40;
             min-height: 250px;
