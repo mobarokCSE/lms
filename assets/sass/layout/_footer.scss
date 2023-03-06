@@ -14,7 +14,7 @@
                 color: $white-color;
             }
         }
-    }
+    } 
 
     &__top {
         &--style1 {
@@ -274,7 +274,7 @@
         }
     }
 
-    &__bottom {
+    &__lower {
         background-color: $brand3-bg-4;
         &-copyright {
             @extend %py-25;

@@ -18,12 +18,12 @@
         }
 
         @include breakpoint(lg) {
-            padding-block-start: 132px;
+            padding-block-start: 146px;
             padding-block-end: 90px;
 
-            &.brand-4 {
-                padding-block-start: 90px
-            }
+            // &.brand-4 {
+            //     padding-block-start: 90px
+            // }
         }
 
         .banner-image {
@@ -72,7 +72,8 @@
         }
 
         @include breakpoint(lg) {
-            padding-block: 90px;
+            padding-block-start: 146px;
+            padding-block-end: 90px;
         }
 
         .banner-image {
@@ -103,11 +104,47 @@
         }
     }
 
-    &.brand-3{
+    &.brand-3 {
         @extend %p-rel;
     }
 
+    &--style3 {
+        padding-block-start: 132px;
+
+        @include breakpoint(lg) {
+            padding-block-start: 180px;
+        }
+
+        @include breakpoint(xl) {
+            padding-block-start: 200px;
+        }
+
+        @include breakpoint(xxl) {
+            padding-block-start: 232px;
+        }
+    }
+
     &__content {
+        &-star {
+            @extend %d-flex,
+            %align-i-center,
+            %mb-20;
+            gap: 15px;
+
+            p {
+                @extend %mb-0;
+                @include font-size(20px);
+                font-weight: 600;
+
+            }
+
+            span {
+                a {
+                    text-decoration: underline;
+                    font-style: italic;
+                }
+            }
+        }
 
         &--style1 {
             @extend %text-center,
@@ -167,33 +204,34 @@
                 }
             }
 
-            .banner {
-                &__content {
-                    &-star {
-                        @extend %d-flex,
-                        %align-i-center,
-                        %mb-20;
-                        gap: 15px;
 
-                        p {
-                            @extend %mb-0;
-                            @include font-size(20px);
-                            font-weight: 600;
+        }
 
-                        }
+        &--style3 {
+            h1 {
+                @extend %mb-20;
 
-                        span {
-                            a {
-                                text-decoration: underline;
-                                font-style: italic;
-                            }
-                        }
-                    }
+                @include breakpoint(lg) {
+                    @include font-size(48px);
+                }
+
+                @include breakpoint(xl) {
+                    @include font-size(64px);
+                }
+
+                @include breakpoint(xxl) {
+                    @include font-size(80px);
                 }
             }
 
+            p {
+                @extend %mb-25;
+                max-inline-size: 55ch;
 
-
+                @include breakpoint(lg) {
+                    margin-bottom: 55px;
+                }
+            }
         }
     }
 
@@ -216,12 +254,28 @@
             .banner__thumb {
                 &-item {
                     img {
-                        position: absolute;
-                        right: 0;
-                        bottom: 0;
+                        // position: inherit;
                         max-inline-size: 60%;
 
+                        @include breakpoint(max-md) {
+                            position: inherit;
+                            // right: 0;
+                            // bottom: 0;
+                            max-inline-size: 60%;
+                        }
+
+                        @include breakpoint(lg) {
+                            position: absolute !important;
+                            right: 8%;
+                            bottom: 0;
+                            max-inline-size: 40%;
+                        }
+
                         @include breakpoint(xl) {
+                            max-inline-size: 40%;
+                        }
+
+                        @include breakpoint(xxl) {
                             position: absolute;
                             right: 11%;
                             bottom: 0;
@@ -406,6 +460,23 @@
                     width: auto;
                 }
             }
+
+            &:nth-child(6) {
+
+                width: 50px;
+                top: 41%;
+                right: 18%;
+                z-index: +1;
+                // @include animation(zoom 2s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate);
+
+                @include breakpoint(lg) {
+                    width: 150px;
+                }
+
+                @include breakpoint(xl) {
+                    width: auto;
+                }
+            }
         }
     }
 
@@ -521,11 +592,12 @@
                             @include animation(floating 2s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate);
                         }
 
-                        @include breakpoint(md) {
-                            display: block;
-                        }
+                        // @include breakpoint(md) {
+                        //     display: block;
+                        // }
 
                         @include breakpoint(lg) {
+                            display: block;
                             width: 150px;
                         }
 
@@ -535,12 +607,14 @@
                     }
 
                     &:nth-child(3) {
+                        display: none;
                         width: 100px;
                         z-index: -1;
                         top: 18%;
                         right: 10%;
 
                         @include breakpoint(lg) {
+                            display: block;
                             width: 150px;
                         }
 
@@ -552,6 +626,46 @@
             }
         }
 
+    }
+
+    .reviews {
+        &__content {
+            p {
+                color: $white-color;
+            }
+        }
+
+
+        &__thumb {
+            @extend %d-flex;
+            gap: 30px;
+
+            ul {
+                @extend %d-flex,
+                %align-i-center;
+
+                li {
+                    &:not(:nth-child(0)) {
+                        margin-right: -10px;
+                    }
+
+                    .count {
+                        @extend %p-rel;
+                        border: 1px solid $white-color;
+                        @include box(32px);
+                        border-radius: 50px;
+                        background-color: $secondary-color-1;
+                        position: relative;
+
+                        span {
+                            @extend %p-abs,
+                            %pos-center;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

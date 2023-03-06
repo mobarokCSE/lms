@@ -4,10 +4,10 @@
 
     &--style1 {
         .community {
-            &__wrapper{
+            &__wrapper {
                 @extend %text-center;
             }
-            
+
 
             &__reviews {
                 @extend %text-center,
@@ -16,7 +16,7 @@
                 margin-inline: auto;
                 z-index: 1;
 
-                @include breakpoint(sm){
+                @include breakpoint(sm) {
                     margin-block-end: -74px;
                 }
             }

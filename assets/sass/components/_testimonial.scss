@@ -227,4 +227,126 @@
     }
   }
 
+  &--style3 {
+    .testimonial {
+      &__writer {
+        @extend %mb-25;
+
+        @include breakpoint(lg) {
+          margin-block-end: 65px
+        }
+
+        h5 {
+          @extend %text-semibold;
+        }
+
+        p {
+          @extend %mb-10;
+          color: $text-color-light;
+        }
+
+        >span {
+          svg {
+            color: $secondary-color-3;
+          }
+        }
+
+      }
+
+      &__content {
+        blockquote {
+          p {
+            @include font-size(18px);
+          }
+
+        }
+
+        .quote {
+          @extend %text-right,
+          %d-inherit;
+
+          svg {
+            @include font-size(70px);
+            color: $brand-color-3;
+          }
+        }
+      }
+
+      &__thumb {
+        @extend %p-rel,
+        %text-center;
+        object-fit: cover;
+        transition: $transition;
+
+        &-playbtn {
+          @extend %p-abs,
+          %pos-center;
+
+          p {
+            @extend %mb-5;
+            @include font-size(18px);
+            color: $white-color;
+          }
+
+          span {
+            @include font-size(14px);
+            color: $secondary-color-3;
+          }
+
+          a {
+            img {
+              @extend %mb-10;
+              object-fit: cover;
+              transition: $transition;
+              width: 60px;
+
+              @include breakpoint(sm){
+                width: auto;
+              }
+            }
+          }
+
+          &:hover {
+            a {
+              img {
+                @include add-prefix (transform, scale(1.05));
+              }
+
+            }
+          }
+
+        }
+      }
+
+      &__storyteller {
+        @extend %d-flex,
+        %align-i-center,
+        %p-10;
+        @include add-prefix(transition, $transition);
+        gap: 10px;
+
+        &-content {
+          h6 {
+            @extend %text-semibold;
+          }
+ 
+          p {
+            color: $text-color-light;
+          }
+        }
+
+
+
+        .swiper-slide {
+          &-active {
+            background-color: $white-color;
+          }
+        }
+
+      }
+
+
+    }
+  }
+
 }

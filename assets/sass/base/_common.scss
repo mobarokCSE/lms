@@ -42,6 +42,48 @@
             color: $title-color;
         }
     }
+
+    &--style2 {
+        // .community__reviews {
+        //     &-content {
+        //         p {
+        //             color: $white-color;
+        //         }
+        //     }
+
+
+        //     &-thumb {
+        //         @extend %d-flex;
+        //         gap: 30px;
+
+        //         ul {
+        //             @extend %d-flex,
+        //             %align-i-center;
+
+        //             li {
+        //                 &:not(:nth-child(0)) {
+        //                     margin-right: -10px;
+        //                 }
+
+        //                 .count {
+        //                     @extend %p-rel;
+        //                     border: 1px solid $white-color;
+        //                     @include box(32px);
+        //                     border-radius: 50px;
+        //                     background-color: $secondary-color-1;
+        //                     position: relative;
+
+        //                     span {
+        //                         @extend %p-abs,
+        //                         %pos-center;
+        //                         font-size: 12px;
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+    }
 }
 
 
@@ -140,46 +182,45 @@
 
 
 // form
-    .form {
-        @extend %p-rel;
-        z-index: 1;
+.form {
+    @extend %p-rel;
+    z-index: 1;
 
-        input,
-        textarea {
-            @extend %w-100;
-            // @include add-prefix(border, 1px solid rgba($theme-color, $alpha:.1));
-            @include add-prefix(border-radius, .5rem);
-            @include add-prefix(transition, $transition);
-            // background-color: $body-color;
-            color: $text-color;
-            padding: 15px 30px;
+    input,
+    textarea {
+        @extend %w-100;
+        // @include add-prefix(border, 1px solid rgba($theme-color, $alpha:.1));
+        @include add-prefix(border-radius, .5rem);
+        @include add-prefix(transition, $transition);
+        // background-color: $body-color;
+        color: $text-color;
+        padding: 15px 30px;
 
-            &.style1{
-                border-radius: 0;
-                border: none;
-                background-color:  $brand3-bg-4;
-                color: $white-color;
-            }
-
-            &::placeholder {
-                color: $white-color;
-            }
-
-            &:focus-within {
-                outline: none;
-                // border-color: rgba($theme-color, $alpha: .80);
-                border-color: none;
-                box-shadow: none;
-            }
+        &.style1 {
+            border-radius: 0;
+            border: none;
+            background-color: $brand3-bg-4;
+            color: $white-color;
         }
 
-        input {
-            @extend %mb-20;
+        &::placeholder {
+            color: #B593E8;
         }
- 
-        textarea {
-            @extend %mb-40;
-            min-height: 250px;
+
+        &:focus-within {
+            outline: none;
+            // border-color: rgba($theme-color, $alpha: .80);
+            border-color: none;
+            box-shadow: none;
         }
     }
 
+    input {
+        @extend %mb-20;
+    }
+
+    textarea {
+        @extend %mb-40;
+        min-height: 250px;
+    }
+}

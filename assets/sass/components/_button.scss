@@ -67,11 +67,16 @@
     color: $white-color;
   }
 
+  &--search{
+        background-color: $brand-color-3;
+        color: $white-color;
+  }
 
 
   &--defult {
     background-color: $black-color;
     color: $white-color;
+
   }
 
 
@@ -113,6 +118,7 @@
       transform: translateY(-3px);
     }
 
+
     // home 2
     &.trk-btn--secondary3,
     &.trk-btn--secondary2,
@@ -141,6 +147,12 @@
 
       svg {
         @include add-prefix(transform, translateX(5px));
+      }
+    }
+    &.trk-btn--search {
+      color: $white-color;
+      svg {
+        @include add-prefix (transform, rotate(40deg));
       }
     }
 

@@ -459,6 +459,46 @@ const Swiper7 = new Swiper('.testimonial__slider2', {
 //     speed: 3000,
 // });
 
+// testimonial
+const testimonialSlider3 = new Swiper('.testimonial__slider3', {
+    spaceBetween: 24,
+    grabCursor: true,
+    loop: true,
+    slidesPerView: 1,
+    speed: 3000,
+    thumbs: {
+        swiper: testimonialStoryteller,
+    },
+});
+
+var testimonialStoryteller = new Swiper(".testimonial__storyteller", {
+    spaceBetween: 24,
+    // slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+    loop: true,
+    // clickable: true,
+    breakpoints: {
+        576: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 24,
+        }
+    },
+});
+
+
+
+
 
 // blog
 const BlogSlider = new Swiper('.blog__slider', {
@@ -477,7 +517,7 @@ const BlogSlider = new Swiper('.blog__slider', {
             spaceBetween: 15,
         },
         1400: {
-            slidesPerView: 4,
+            slidesPerView: 5,
             spaceBetween: 25,
         }
     },

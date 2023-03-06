@@ -1,4 +1,5 @@
 .counter {
+    @extend %of-hidden;
     &--style1 {
         .counter {
             &__item {
@@ -54,19 +55,33 @@
             }
         }
     }
-    &--style2{
+
+    &--style2 {
         .counter {
+            &__wrapper {
+                @include breakpoint(max-md) {
+                    padding-block: 30px;
+                }
+            }
+
             &__item {
 
-
                 &-inner {
-                    @extend %d-flex, %py-65;
+                    @extend %d-flex;
                     gap: 25px;
+
+                    // @include breakpoint(lg) {
+                    //     padding-block: 65px;
+                    // }
+                    @include breakpoint(md) {
+                        padding-block: 45px;
+                    }
+                    @include breakpoint(lg) {
+                        padding-block: 65px;
+                    }
                 }
- 
-                &-thumb {
-                    @extend %mb-30;
-                }
+
+
 
                 &-content {
                     h3 {
@@ -76,12 +91,30 @@
                     }
 
                     p {
-                        @extend %text-medium, %mb-0;
+                        @extend %text-medium,
+                        %mb-0;
                         @include font-size(18px);
                         color: $white-color;
                     }
                 }
             }
+
+            // &:not(:last-child) {
+            //     .col-md-3 {
+            //         .counter__item {
+            //             &-thumb {
+            //                 @extend %mb-30;
+            //             }
+            //         }
+            //     }
+            // }
+
+            // &-thumb {
+            //     &:not(:last-child) {
+            //         @extend %mb-30;
+            //     }
+
+            // }
         }
     }
 }
